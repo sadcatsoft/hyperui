@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{5f430274-84d5-4eee-8eba-65f71dee1095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrapper">
+      <UniqueIdentifier>{607607df-e63f-4a78-88e8-a9c4c0360fe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{3d3dc142-e6a3-47e8-bf64-c87dce763367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PyClasses">
+      <UniqueIdentifier>{e7ba5c2b-ee4d-4a4d-8816-5151569d8543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrapper\CustomUI">
+      <UniqueIdentifier>{d2dcf463-5d85-4f1d-805b-d0a253033d4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyWindow.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PythonObjectFactory.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyUIElement.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PythonUtils.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BridgeUIElement.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BridgeWindow.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyUISplitterElement.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyUITableCellElement.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyUITableElement.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyUIProgressElement.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BridgeElementBase.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyResourceManager.cpp">
+      <Filter>PyClasses</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyWindow.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PythonObjectFactory.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyUIElement.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PythonUtils.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyObjectMap.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BridgeUIElement.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BridgeWindow.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dist\msvc2015\hyperui\config\resUICommon.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyUISplitterElement.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyTableCellInfoProvider.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyUITableCellElement.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyUITableElement.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyUIProgressElement.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyGridCellInfoProvider.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BridgeElementBase.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PyResourceManager.h">
+      <Filter>PyClasses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\dist\msvc2015\simpleWindow.py">
+      <Filter>Wrapper</Filter>
+    </None>
+    <None Include="..\..\dist\msvc2015\hyperui\__init__.py">
+      <Filter>Wrapper</Filter>
+    </None>
+    <None Include="..\..\dist\msvc2015\elementsCatalog.py">
+      <Filter>Wrapper</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\dist\msvc2015\hyperui\config\resAnimations.txt">
+      <Filter>config</Filter>
+    </Text>
+    <Text Include="..\..\dist\msvc2015\hyperui\config\resFonts.txt">
+      <Filter>config</Filter>
+    </Text>
+    <Text Include="..\..\dist\msvc2015\customUI\resGraphics.txt">
+      <Filter>Wrapper\CustomUI</Filter>
+    </Text>
+    <Text Include="..\..\dist\msvc2015\customUI\resUI.txt">
+      <Filter>Wrapper\CustomUI</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

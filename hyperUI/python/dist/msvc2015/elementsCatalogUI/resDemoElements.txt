@@ -1,0 +1,475 @@
+<button>
+	id = exampleButton
+	tags = exampleElements
+	isHidden = True
+</button>
+
+<window>
+	id = exampleStatic
+	tags = exampleElements
+	isHidden = True
+	<elem>
+		id = exampleStaticText
+		text = This is an example of static text element.^Below is an example of a simple image.
+		y = -100up
+	</elem>
+
+	<elem>
+		id = exampleStaticImage
+		image = customIcon
+		y = -50up
+	</elem>
+
+	<elem>
+		id = exampleStaticImageAndText
+		image = customIcon
+		text = Image and label element
+		textOffsetX = 12up
+		textHorAlign = Left
+	</elem>
+
+	<elem>
+		id = exampleStaticOutlinedAndFilled
+		text = Filled And outlined element
+		backColor = { 15, 156, 255, 0.25 }
+		borderColor = { 15, 156, 255, 1.0 }
+		borderThickness = 0.25up
+		width = 110up
+		height = 20up
+		y = 50up
+	</elem>
+</window>
+
+<progress>
+	id = exampleProgressBar
+	tags = exampleElements
+	isHidden = True
+
+	text = Completion:
+	textOffsetX = -75up
+	textOffsetY = -0.5up
+	textHorAlign = Right
+</progress>
+
+<checkbox>
+	id = exampleCheckbox
+	tags = exampleElements
+	isHidden = True
+	text = Checkbox Label
+	width = 200up
+	fillXLess = -1
+	x = 100up
+</checkbox>
+
+<window>
+	id = exampleRadioButton
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 0up
+	fillYLess = 0up
+
+	<radioButton>
+		id = exampleRadioButton1
+		text = Option 1
+		width = 200up
+		fillXLess = -1
+		x = 100up
+		y = -20up
+		radioGroup = ___myExampleGroup___
+	</radioButton>
+
+	<radioButton>
+		id = exampleRadioButton2
+		text = Option 2
+		width = 200up
+		fillXLess = -1
+		x = 100up
+		radioGroup = ___myExampleGroup___
+	</radioButton>
+
+	<radioButton>
+		id = exampleRadioButton3
+		text = Option 3
+		width = 200up
+		fillXLess = -1
+		x = 100up
+		y = 20up
+		radioGroup = ___myExampleGroup___
+	</radioButton>
+</window>
+
+<window>
+	id = exampleKnob
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 0up
+	fillYLess = 0up
+
+	<angle>
+		id = exampleKnob1
+		x = -10up
+		y = -25up
+	</angle>
+
+	<numericRoundSlider>
+		id = exampleKnob2
+		y = 25up
+		fillXLess = 40up
+		<elem>
+			id = defLabel
+			text = My Label
+		</elem>
+	</numericRoundSlider>
+</window>
+
+<numericSlider>
+	id = exampleNumericSlider
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+	<elem>
+		id = defLabel
+		text = My Label
+	</elem>
+	<elem>
+		id = defNumSliderSlider
+		max = 100
+	</elem>
+</numericSlider>
+
+<window>
+	id = exampleDropdown
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 0up
+	fillYLess = 0up
+
+	<dropdown>
+		id = exampleDropdown1
+		fillXLess = 40up
+		menuIds = { __none__, idOption1, idOption2, idOption3 }
+		menuLabels = {  __none__, Option 1, Option 2, Option 3 }
+		y = -20up
+	</dropdown>
+
+	<labeledDropdown>
+		id = exampleDropdown2
+		fillXLess = 40up
+		y = 20up
+		<topDropdown>
+			id = defDropdown
+			menuIds = { __none__, idOption1, idOption2, idOption3 }
+			menuLabels = {  __none__, Option 1, Option 2, Option 3 }
+		</topDropdown>
+		<elem>
+			id = defLabel
+			text = My Label
+		</elem>
+	</labeledDropdown>
+</window>
+
+<multilineInput>
+	id = exampleMultilineInput
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+	<elem>
+		id = defLabel
+		text = My Label
+	</elem>
+</multilineInput>
+
+<color>
+	id = exampleColor
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+</color>
+
+<mainMenu>
+	id = exampleMenu
+	tags = exampleElements
+	isHidden = True
+
+	menuIds = {	idFile,	idEdit }
+	menuLabels = { File, Edit }
+	menuSubitems = { exampleFileSubmenu, exampleEditSubmenu }
+	menuActions = {	__none__, __none__ }
+	menuActionValues = { __none__, __none__ }
+</mainMenu>
+
+<window>
+	id = exampleSplitter
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 0up
+	fillYLess = 0up
+
+
+	<vertSplitter>
+		id = exampleSplitterVert
+		fillXLess = 40up
+		height = 150up
+		borderColor = { 255, 255, 255, 0.8 }
+		borderThickness = 0.5up
+		y = -90up
+		<elem>
+			id = exampleSplitterVertLeft
+			backColor = #ff7800
+		</elem>
+		<elem>
+			id = exampleSplitterVertRight
+			backColor = #00baff
+		</elem>
+	</vertSplitter>
+
+	<horSplitter>
+		id = exampleSplitterHor
+		fillXLess = 40up	
+		height = 150up
+		borderColor = { 255, 255, 255, 0.8 }
+		borderThickness = 0.25up
+		y = 90up
+		<elem>
+			id = exampleSplitterHorTop
+			backColor = #ff7800
+		</elem>
+		<elem>
+			id = exampleSplitterHorBottom
+			backColor = #00baff
+		</elem>
+	</horSplitter>
+</window>
+
+<stringInput>
+	id = exampleStringInput
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+	<elem>
+		id = defLabel
+		text = My Label
+	</elem>
+	<elem>
+		id = defTextBox
+		text = Initial text
+	</elem>
+</stringInput>
+
+<table>
+	id = exampleVertTable
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+	fillYLess = 40up
+	cellTypes = { sampleCell }
+</table>
+
+<horTable>
+	id = exampleHorTable
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+	height = 100up
+	cellTypes = { sampleHorCell }
+</horTable>
+
+<richText>
+	id = exampleRichText
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 100up
+	fillYLess = 40up
+	borderColor = { 255, 255, 255, 0.8 }
+	borderThickness = 0.25up
+	<elem>
+		id = defContent
+		text = ___[[[This is an example of plain-text content, with a button with a customized text and action below.^
+    {richTextButton rtPaddingLeft=10up text=___(((Custom Button)))___ action=showMessage actionValue=___(((Test message)))___}]]]___
+	</elem>
+</richText>
+
+<grid>
+	id = exampleGrid
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 40up
+	fillYLess = 40up
+	cellTypes = { gridCell }
+	cellWidth = 64up
+	cellHeight = 32up
+</grid>
+
+<window>
+	id = exampleVerticalLayout
+	tags = exampleElements
+	isHidden = True
+	width = 200up
+	fillYLess = 100up
+	borderColor = { 15, 156, 255, 1.0 }
+	borderThickness = 0.5up
+
+	layout = column
+
+	<elem>
+		id = elemAtRow0
+		text = Row 0
+		fillXLess = 0
+		height = 20up
+		backColor = { 255, 0, 0, 0.5 }
+	</elem>
+
+	<elem>
+		id = elemAtRow1
+		text = Row 1
+		fillXLess = 0
+		height = 20up
+		backColor = { 0, 255, 0, 0.5 }
+	</elem>
+
+	<elem>
+		id = elemAtRow2
+		text = Row 2
+		fillXLess = 0
+		height = 20up
+		backColor = { 0, 0, 255, 0.5 }
+	</elem>
+
+	<button>
+		id = elemAtRow3
+		text = Sample Button
+		width = 100up
+		marginTop = 5up
+	</button>
+
+</window>
+
+<window>
+	id = exampleHorizontalLayout
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 100up
+	height = 200up
+	borderColor = { 15, 156, 255, 1.0 }
+	borderThickness = 0.5up
+
+	layout = row
+
+	<elem>
+		id = elemAtColumn0
+		text = Column 0
+		fillYLess = 0
+		width = 50up
+		backColor = { 255, 0, 0, 0.5 }
+	</elem>
+
+	<elem>
+		id = elemAtColumn1
+		text = Column 1
+		fillYLess = 0
+		width = 50up
+		backColor = { 0, 255, 0, 0.5 }
+	</elem>
+
+	<elem>
+		id = elemSpacer
+		text = Spacer
+		fillYLess = 0
+		width = 50up
+		backColor = { 255, 255, 0, 0.5 }
+		layoutWidth = 1
+	</elem>
+
+	<elem>
+		id = elemAtColumn2
+		text = Column 2
+		fillYLess = 0
+		width = 50up
+		backColor = { 0, 0, 255, 0.5 }
+	</elem>
+
+</window>
+
+<autoDialog>
+	id = exampleAutoDialog
+	tags = exampleElements
+	isHidden = True
+	<window>
+		id = defDialogWindow
+		title = Preferences
+		width = 270up
+		<elem>
+			id = defDialogInner
+			
+			<checkbox>
+				id = settingsConserveMemory
+				text = Application Option 1
+				fillXLess = 10up
+			</checkbox>
+
+			<checkbox>
+				id = settingsCreateLayersExpanded
+				text = Application Option 2
+				fillXLess = 10up
+			</checkbox>
+
+			<separator>
+				id = settingsSep1
+			</separator>
+
+			<checkbox>
+				id = settingsUseNativeColorPicker
+				text = Even More Application Options
+				fillXLess = 10up
+			</checkbox>
+
+			<separator>
+				id = settingsSep2
+			</separator>
+
+			<uiNumericSlider>
+				id = settingsTooltipDelay
+				fillXLess = 15up
+				<elem>
+					id = defLabel
+					text = Range Option
+					layoutWidth = 60up
+				</elem>
+				<elem>
+					id = defNumSliderSlider
+					min = 0
+					max = 3.0
+					textFormat = %.2fs
+				</elem>
+				<uiNumeric>
+					id = defNumSliderUpdown
+					<elem>
+						id = defNumBox
+						textFormat = %.2fs
+					</elem>
+				</uiNumeric>
+			</uiNumericSlider>
+
+		</elem>
+		<elem>
+			id = defBottomButtonContainer
+			<defaultButton>
+				id = defOkButton
+				action = __none__
+			</defaultButton>
+			<button>
+				id = defCancelButton
+				action = __none__
+			</button>
+		</elem>
+	</window>
+</autoDialog>
+
+<elem>
+	id = exampleColorPalette
+	tags = exampleElements
+	isHidden = True
+	fillXLess = 100up
+	fillYLess = 100up
+	elemType = colorPalette
+</elem>

@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C91FAF7212A479900D58B2E /* PyUIProgressElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C91FAE9212A479900D58B2E /* PyUIProgressElement.cpp */; };
+		7C91FAF8212A479900D58B2E /* PyTableCellInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAEC212A479900D58B2E /* PyTableCellInfoProvider.h */; };
+		7C91FAF9212A479900D58B2E /* PyUITableElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAED212A479900D58B2E /* PyUITableElement.h */; };
+		7C91FAFA212A479900D58B2E /* BridgeElementBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C91FAEE212A479900D58B2E /* BridgeElementBase.cpp */; };
+		7C91FAFB212A479900D58B2E /* PyUISplitterElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAEF212A479900D58B2E /* PyUISplitterElement.h */; };
+		7C91FAFC212A479900D58B2E /* PyUITableElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C91FAF0212A479900D58B2E /* PyUITableElement.cpp */; };
+		7C91FAFD212A479900D58B2E /* PyUISplitterElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C91FAF1212A479900D58B2E /* PyUISplitterElement.cpp */; };
+		7C91FAFE212A479900D58B2E /* PyUITableCellElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C91FAF2212A479900D58B2E /* PyUITableCellElement.cpp */; };
+		7C91FAFF212A479900D58B2E /* PyUITableCellElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAF3212A479900D58B2E /* PyUITableCellElement.h */; };
+		7C91FB00212A479900D58B2E /* PyUIProgressElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAF4212A479900D58B2E /* PyUIProgressElement.h */; };
+		7C91FB01212A479900D58B2E /* BridgeElementBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAF5212A479900D58B2E /* BridgeElementBase.h */; };
+		7C91FB02212A479900D58B2E /* PyGridCellInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C91FAF6212A479900D58B2E /* PyGridCellInfoProvider.h */; };
+		7CC91C9C210CF5110090A102 /* libboost_python.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC91C9B210CF5110090A102 /* libboost_python.a */; };
+		7CC91C9E210CF5450090A102 /* Python in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC91C9D210CF5450090A102 /* Python */; };
+		7CF94C78210EB87A001634CC /* PythonObjectFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C68210EB87A001634CC /* PythonObjectFactory.h */; };
+		7CF94C79210EB87A001634CC /* BridgeUIElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C69210EB87A001634CC /* BridgeUIElement.cpp */; };
+		7CF94C7A210EB87A001634CC /* BridgeWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C6A210EB87A001634CC /* BridgeWindow.cpp */; };
+		7CF94C7B210EB87A001634CC /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C6B210EB87A001634CC /* stdafx.cpp */; };
+		7CF94C7C210EB87A001634CC /* BridgeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C6C210EB87A001634CC /* BridgeWindow.h */; };
+		7CF94C7D210EB87A001634CC /* PyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C6D210EB87A001634CC /* PyWindow.h */; };
+		7CF94C7E210EB87A001634CC /* BridgeUIElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C6E210EB87A001634CC /* BridgeUIElement.h */; };
+		7CF94C7F210EB87A001634CC /* PythonUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C6F210EB87A001634CC /* PythonUtils.cpp */; };
+		7CF94C80210EB87A001634CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C70210EB87A001634CC /* main.cpp */; };
+		7CF94C81210EB87A001634CC /* PythonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C71210EB87A001634CC /* PythonUtils.h */; };
+		7CF94C82210EB87A001634CC /* PyUIElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C72210EB87A001634CC /* PyUIElement.h */; };
+		7CF94C83210EB87A001634CC /* PyWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C73210EB87A001634CC /* PyWindow.cpp */; };
+		7CF94C84210EB87A001634CC /* PythonObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C74210EB87A001634CC /* PythonObjectFactory.cpp */; };
+		7CF94C85210EB87A001634CC /* stdafx.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C75210EB87A001634CC /* stdafx.h */; };
+		7CF94C86210EB87A001634CC /* PyObjectMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF94C76210EB87A001634CC /* PyObjectMap.h */; };
+		7CF94C87210EB87A001634CC /* PyUIElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94C77210EB87A001634CC /* PyUIElement.cpp */; };
+		7CF94C90210EBAEB001634CC /* HyperCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF94C8F210EBAE2001634CC /* HyperCore.framework */; };
+		7CF94C98210EBAFC001634CC /* HyperUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF94C97210EBAF7001634CC /* HyperUI.framework */; };
+		7CF94CB621101535001634CC /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CF94CB521101535001634CC /* main.mm */; };
+		7CF94CB821101602001634CC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF94CB721101601001634CC /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CF94C8E210EBAE2001634CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF94C8A210EBAE2001634CC /* HyperCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C102BF6209D688A00434DAA;
+			remoteInfo = HyperCore;
+		};
+		7CF94C96210EBAF7001634CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF94C91210EBAF7001634CC /* HyperUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8B93C820A5451600F81657;
+			remoteInfo = HyperUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C91FAE9212A479900D58B2E /* PyUIProgressElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PyUIProgressElement.cpp; path = ../src/PyUIProgressElement.cpp; sourceTree = "<group>"; };
+		7C91FAEC212A479900D58B2E /* PyTableCellInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyTableCellInfoProvider.h; path = ../src/PyTableCellInfoProvider.h; sourceTree = "<group>"; };
+		7C91FAED212A479900D58B2E /* PyUITableElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyUITableElement.h; path = ../src/PyUITableElement.h; sourceTree = "<group>"; };
+		7C91FAEE212A479900D58B2E /* BridgeElementBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BridgeElementBase.cpp; path = ../src/BridgeElementBase.cpp; sourceTree = "<group>"; };
+		7C91FAEF212A479900D58B2E /* PyUISplitterElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyUISplitterElement.h; path = ../src/PyUISplitterElement.h; sourceTree = "<group>"; };
+		7C91FAF0212A479900D58B2E /* PyUITableElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PyUITableElement.cpp; path = ../src/PyUITableElement.cpp; sourceTree = "<group>"; };
+		7C91FAF1212A479900D58B2E /* PyUISplitterElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PyUISplitterElement.cpp; path = ../src/PyUISplitterElement.cpp; sourceTree = "<group>"; };
+		7C91FAF2212A479900D58B2E /* PyUITableCellElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PyUITableCellElement.cpp; path = ../src/PyUITableCellElement.cpp; sourceTree = "<group>"; };
+		7C91FAF3212A479900D58B2E /* PyUITableCellElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyUITableCellElement.h; path = ../src/PyUITableCellElement.h; sourceTree = "<group>"; };
+		7C91FAF4212A479900D58B2E /* PyUIProgressElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyUIProgressElement.h; path = ../src/PyUIProgressElement.h; sourceTree = "<group>"; };
+		7C91FAF5212A479900D58B2E /* BridgeElementBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgeElementBase.h; path = ../src/BridgeElementBase.h; sourceTree = "<group>"; };
+		7C91FAF6212A479900D58B2E /* PyGridCellInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyGridCellInfoProvider.h; path = ../src/PyGridCellInfoProvider.h; sourceTree = "<group>"; };
+		7CC91C8E210CF2CA0090A102 /* pyhyperui.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = pyhyperui.so; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC91C9B210CF5110090A102 /* libboost_python.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_python.a; path = ../../../../Libs/boost_1_66_0/stage/lib/libboost_python.a; sourceTree = "<group>"; };
+		7CC91C9D210CF5450090A102 /* Python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Python; path = ../../../../../../../Library/Frameworks/Python.framework/Versions/3.6/Python; sourceTree = "<group>"; };
+		7CF94C68210EB87A001634CC /* PythonObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PythonObjectFactory.h; path = ../src/PythonObjectFactory.h; sourceTree = "<group>"; };
+		7CF94C69210EB87A001634CC /* BridgeUIElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BridgeUIElement.cpp; path = ../src/BridgeUIElement.cpp; sourceTree = "<group>"; };
+		7CF94C6A210EB87A001634CC /* BridgeWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BridgeWindow.cpp; path = ../src/BridgeWindow.cpp; sourceTree = "<group>"; };
+		7CF94C6B210EB87A001634CC /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = ../src/stdafx.cpp; sourceTree = "<group>"; };
+		7CF94C6C210EB87A001634CC /* BridgeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgeWindow.h; path = ../src/BridgeWindow.h; sourceTree = "<group>"; };
+		7CF94C6D210EB87A001634CC /* PyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyWindow.h; path = ../src/PyWindow.h; sourceTree = "<group>"; };
+		7CF94C6E210EB87A001634CC /* BridgeUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgeUIElement.h; path = ../src/BridgeUIElement.h; sourceTree = "<group>"; };
+		7CF94C6F210EB87A001634CC /* PythonUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PythonUtils.cpp; path = ../src/PythonUtils.cpp; sourceTree = "<group>"; };
+		7CF94C70210EB87A001634CC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
+		7CF94C71210EB87A001634CC /* PythonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PythonUtils.h; path = ../src/PythonUtils.h; sourceTree = "<group>"; };
+		7CF94C72210EB87A001634CC /* PyUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyUIElement.h; path = ../src/PyUIElement.h; sourceTree = "<group>"; };
+		7CF94C73210EB87A001634CC /* PyWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PyWindow.cpp; path = ../src/PyWindow.cpp; sourceTree = "<group>"; };
+		7CF94C74210EB87A001634CC /* PythonObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PythonObjectFactory.cpp; path = ../src/PythonObjectFactory.cpp; sourceTree = "<group>"; };
+		7CF94C75210EB87A001634CC /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../src/stdafx.h; sourceTree = "<group>"; };
+		7CF94C76210EB87A001634CC /* PyObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyObjectMap.h; path = ../src/PyObjectMap.h; sourceTree = "<group>"; };
+		7CF94C77210EB87A001634CC /* PyUIElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PyUIElement.cpp; path = ../src/PyUIElement.cpp; sourceTree = "<group>"; };
+		7CF94C8A210EBAE2001634CC /* HyperCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HyperCore.xcodeproj; path = ../../../hyperCore/mac/HyperCore.xcodeproj; sourceTree = "<group>"; };
+		7CF94C91210EBAF7001634CC /* HyperUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HyperUI.xcodeproj; path = ../../mac/HyperUI.xcodeproj; sourceTree = "<group>"; };
+		7CF94CB521101535001634CC /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		7CF94CB721101601001634CC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC91C8B210CF2CA0090A102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF94CB821101602001634CC /* AppKit.framework in Frameworks */,
+				7CF94C98210EBAFC001634CC /* HyperUI.framework in Frameworks */,
+				7CF94C90210EBAEB001634CC /* HyperCore.framework in Frameworks */,
+				7CC91C9E210CF5450090A102 /* Python in Frameworks */,
+				7CC91C9C210CF5110090A102 /* libboost_python.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CC91C85210CF2CA0090A102 = {
+			isa = PBXGroup;
+			children = (
+				7CF94C65210EB868001634CC /* source */,
+				7CC91C8F210CF2CA0090A102 /* Products */,
+				7CC91C9A210CF5110090A102 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC91C8F210CF2CA0090A102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC91C8E210CF2CA0090A102 /* pyhyperui.so */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC91C9A210CF5110090A102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CF94CB721101601001634CC /* AppKit.framework */,
+				7CF94C91210EBAF7001634CC /* HyperUI.xcodeproj */,
+				7CF94C8A210EBAE2001634CC /* HyperCore.xcodeproj */,
+				7CC91C9D210CF5450090A102 /* Python */,
+				7CC91C9B210CF5110090A102 /* libboost_python.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CF94C65210EB868001634CC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7C91FAEE212A479900D58B2E /* BridgeElementBase.cpp */,
+				7C91FAF5212A479900D58B2E /* BridgeElementBase.h */,
+				7C91FAF6212A479900D58B2E /* PyGridCellInfoProvider.h */,
+				7C91FAEC212A479900D58B2E /* PyTableCellInfoProvider.h */,
+				7C91FAE9212A479900D58B2E /* PyUIProgressElement.cpp */,
+				7C91FAF4212A479900D58B2E /* PyUIProgressElement.h */,
+				7C91FAF1212A479900D58B2E /* PyUISplitterElement.cpp */,
+				7C91FAEF212A479900D58B2E /* PyUISplitterElement.h */,
+				7C91FAF2212A479900D58B2E /* PyUITableCellElement.cpp */,
+				7C91FAF3212A479900D58B2E /* PyUITableCellElement.h */,
+				7C91FAF0212A479900D58B2E /* PyUITableElement.cpp */,
+				7C91FAED212A479900D58B2E /* PyUITableElement.h */,
+				7CF94CB521101535001634CC /* main.mm */,
+				7CF94C69210EB87A001634CC /* BridgeUIElement.cpp */,
+				7CF94C6E210EB87A001634CC /* BridgeUIElement.h */,
+				7CF94C6A210EB87A001634CC /* BridgeWindow.cpp */,
+				7CF94C6C210EB87A001634CC /* BridgeWindow.h */,
+				7CF94C70210EB87A001634CC /* main.cpp */,
+				7CF94C76210EB87A001634CC /* PyObjectMap.h */,
+				7CF94C74210EB87A001634CC /* PythonObjectFactory.cpp */,
+				7CF94C68210EB87A001634CC /* PythonObjectFactory.h */,
+				7CF94C6F210EB87A001634CC /* PythonUtils.cpp */,
+				7CF94C71210EB87A001634CC /* PythonUtils.h */,
+				7CF94C77210EB87A001634CC /* PyUIElement.cpp */,
+				7CF94C72210EB87A001634CC /* PyUIElement.h */,
+				7CF94C73210EB87A001634CC /* PyWindow.cpp */,
+				7CF94C6D210EB87A001634CC /* PyWindow.h */,
+				7CF94C6B210EB87A001634CC /* stdafx.cpp */,
+				7CF94C75210EB87A001634CC /* stdafx.h */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		7CF94C8B210EBAE2001634CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF94C8F210EBAE2001634CC /* HyperCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF94C92210EBAF7001634CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF94C97210EBAF7001634CC /* HyperUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7CC91C8C210CF2CA0090A102 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF94C86210EB87A001634CC /* PyObjectMap.h in Headers */,
+				7CF94C85210EB87A001634CC /* stdafx.h in Headers */,
+				7CF94C81210EB87A001634CC /* PythonUtils.h in Headers */,
+				7CF94C7C210EB87A001634CC /* BridgeWindow.h in Headers */,
+				7CF94C82210EB87A001634CC /* PyUIElement.h in Headers */,
+				7CF94C7D210EB87A001634CC /* PyWindow.h in Headers */,
+				7C91FAFB212A479900D58B2E /* PyUISplitterElement.h in Headers */,
+				7CF94C78210EB87A001634CC /* PythonObjectFactory.h in Headers */,
+				7C91FB02212A479900D58B2E /* PyGridCellInfoProvider.h in Headers */,
+				7C91FAF8212A479900D58B2E /* PyTableCellInfoProvider.h in Headers */,
+				7C91FAFF212A479900D58B2E /* PyUITableCellElement.h in Headers */,
+				7CF94C7E210EB87A001634CC /* BridgeUIElement.h in Headers */,
+				7C91FAF9212A479900D58B2E /* PyUITableElement.h in Headers */,
+				7C91FB00212A479900D58B2E /* PyUIProgressElement.h in Headers */,
+				7C91FB01212A479900D58B2E /* BridgeElementBase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7CC91C8D210CF2CA0090A102 /* pyhyperui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC91C97210CF2CA0090A102 /* Build configuration list for PBXNativeTarget "pyhyperui" */;
+			buildPhases = (
+				7CC91C8A210CF2CA0090A102 /* Sources */,
+				7CC91C8B210CF2CA0090A102 /* Frameworks */,
+				7CC91C8C210CF2CA0090A102 /* Headers */,
+				7CF94CA7210FFD47001634CC /* Change linked library paths */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pyhyperui;
+			productName = pyhyperui;
+			productReference = 7CC91C8E210CF2CA0090A102 /* pyhyperui.so */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC91C86210CF2CA0090A102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Sad Cat Software";
+				TargetAttributes = {
+					7CC91C8D210CF2CA0090A102 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 7CC91C89210CF2CA0090A102 /* Build configuration list for PBXProject "pyhyperui" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7CC91C85210CF2CA0090A102;
+			productRefGroup = 7CC91C8F210CF2CA0090A102 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CF94C8B210EBAE2001634CC /* Products */;
+					ProjectRef = 7CF94C8A210EBAE2001634CC /* HyperCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 7CF94C92210EBAF7001634CC /* Products */;
+					ProjectRef = 7CF94C91210EBAF7001634CC /* HyperUI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7CC91C8D210CF2CA0090A102 /* pyhyperui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CF94C8F210EBAE2001634CC /* HyperCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HyperCore.framework;
+			remoteRef = 7CF94C8E210EBAE2001634CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7CF94C97210EBAF7001634CC /* HyperUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HyperUI.framework;
+			remoteRef = 7CF94C96210EBAF7001634CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CF94CA7210FFD47001634CC /* Change linked library paths */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Change linked library paths";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo --- BEGIN APPLYING lib changes ---\n\nFULL_PATH=${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\n\necho \"Changing linked paths in $FULL_PATH\"\n\ninstall_name_tool -change \"@rpath/HyperCore.framework/Versions/A/HyperCore\" \"@loader_path/HyperCore.framework/Versions/A/HyperCore\" $FULL_PATH\ninstall_name_tool -change \"@rpath/HyperUI.framework/Versions/A/HyperUI\" \"@loader_path/HyperUI.framework/Versions/A/HyperUI\" $FULL_PATH\n\ninstall_name_tool -change \"libboost_python.dylib\" \"@loader_path/libboost_python.dylib\" $FULL_PATH\n\necho \"RESULT\"\n\notool -L $FULL_PATH\n\necho --- END APPLYING lib changes ---\n\ncp -f $FULL_PATH $PROJECT_DIR/../dist/mac/hyperui\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CC91C8A210CF2CA0090A102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF94C7F210EB87A001634CC /* PythonUtils.cpp in Sources */,
+				7CF94C84210EB87A001634CC /* PythonObjectFactory.cpp in Sources */,
+				7CF94C80210EB87A001634CC /* main.cpp in Sources */,
+				7CF94C87210EB87A001634CC /* PyUIElement.cpp in Sources */,
+				7CF94C83210EB87A001634CC /* PyWindow.cpp in Sources */,
+				7CF94C7B210EB87A001634CC /* stdafx.cpp in Sources */,
+				7C91FAFE212A479900D58B2E /* PyUITableCellElement.cpp in Sources */,
+				7C91FAFC212A479900D58B2E /* PyUITableElement.cpp in Sources */,
+				7C91FAFD212A479900D58B2E /* PyUISplitterElement.cpp in Sources */,
+				7CF94CB621101535001634CC /* main.mm in Sources */,
+				7C91FAFA212A479900D58B2E /* BridgeElementBase.cpp in Sources */,
+				7CF94C7A210EB87A001634CC /* BridgeWindow.cpp in Sources */,
+				7C91FAF7212A479900D58B2E /* PyUIProgressElement.cpp in Sources */,
+				7CF94C79210EB87A001634CC /* BridgeUIElement.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7CC91C95210CF2CA0090A102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7CC91C96210CF2CA0090A102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7CC91C98210CF2CA0090A102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EAPZLDDS84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = so;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../Libs/boost_1_66_0,
+					/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks/Python.framework/Versions/3.6/lib,
+					/Users/oleg/Documents/Libs/boost_1_66_0/stage/lib,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/Python.framework/Versions/3.6",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7CC91C99210CF2CA0090A102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EAPZLDDS84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = so;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../Libs/boost_1_66_0,
+					/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks/Python.framework/Versions/3.6/lib,
+					/Users/oleg/Documents/Libs/boost_1_66_0/stage/lib,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/Python.framework/Versions/3.6",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CC91C89210CF2CA0090A102 /* Build configuration list for PBXProject "pyhyperui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC91C95210CF2CA0090A102 /* Debug */,
+				7CC91C96210CF2CA0090A102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC91C97210CF2CA0090A102 /* Build configuration list for PBXNativeTarget "pyhyperui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC91C98210CF2CA0090A102 /* Debug */,
+				7CC91C99210CF2CA0090A102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CC91C86210CF2CA0090A102 /* Project object */;
+}

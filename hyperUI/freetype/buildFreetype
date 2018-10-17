@@ -1,0 +1,13 @@
+NUM_THREADS=8
+
+# Build Freetype library
+echo
+echo "======================"
+echo "BUILDING FREETYPE"
+echo "======================"
+echo 
+make clean
+# No prefix for freetype
+./configure --disable-shared --enable-static --disable-dependency-tracking
+make -j$NUM_THREADS
+sudo make install

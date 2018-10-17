@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\BridgeElementBase.cpp" />
+    <ClCompile Include="..\..\src\BridgeUIElement.cpp" />
+    <ClCompile Include="..\..\src\BridgeWindow.cpp" />
+    <ClCompile Include="..\..\src\main.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PyResourceManager.cpp" />
+    <ClCompile Include="..\..\src\PythonObjectFactory.cpp" />
+    <ClCompile Include="..\..\src\PythonUtils.cpp" />
+    <ClCompile Include="..\..\src\PyUIElement.cpp" />
+    <ClCompile Include="..\..\src\PyUIProgressElement.cpp" />
+    <ClCompile Include="..\..\src\PyUISplitterElement.cpp" />
+    <ClCompile Include="..\..\src\PyUITableCellElement.cpp" />
+    <ClCompile Include="..\..\src\PyUITableElement.cpp" />
+    <ClCompile Include="..\..\src\PyWindow.cpp" />
+    <ClCompile Include="..\..\src\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\dist\msvc2015\hyperui\config\resUICommon.h" />
+    <ClInclude Include="..\..\src\BridgeElementBase.h" />
+    <ClInclude Include="..\..\src\BridgeUIElement.h" />
+    <ClInclude Include="..\..\src\BridgeWindow.h" />
+    <ClInclude Include="..\..\src\PyGridCellInfoProvider.h" />
+    <ClInclude Include="..\..\src\PyObjectMap.h" />
+    <ClInclude Include="..\..\src\PyResourceManager.h" />
+    <ClInclude Include="..\..\src\PyTableCellInfoProvider.h" />
+    <ClInclude Include="..\..\src\PythonObjectFactory.h" />
+    <ClInclude Include="..\..\src\PythonUtils.h" />
+    <ClInclude Include="..\..\src\PyUIElement.h" />
+    <ClInclude Include="..\..\src\PyUIProgressElement.h" />
+    <ClInclude Include="..\..\src\PyUISplitterElement.h" />
+    <ClInclude Include="..\..\src\PyUITableCellElement.h" />
+    <ClInclude Include="..\..\src\PyUITableElement.h" />
+    <ClInclude Include="..\..\src\PyWindow.h" />
+    <ClInclude Include="..\..\src\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\dist\msvc2015\elementsCatalog.py" />
+    <None Include="..\..\dist\msvc2015\hyperui\__init__.py" />
+    <None Include="..\..\dist\msvc2015\simpleWindow.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\dist\msvc2015\customUI\resGraphics.txt" />
+    <Text Include="..\..\dist\msvc2015\customUI\resUI.txt" />
+    <Text Include="..\..\dist\msvc2015\hyperui\config\resAnimations.txt" />
+    <Text Include="..\..\dist\msvc2015\hyperui\config\resFonts.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D11AFB8-F77A-4F5D-8D7A-3770E8F474E9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PyHyperUI</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>pyhyperui</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.pyd</TargetExt>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PYHYPERUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINDOWS;_USRDLL;PYHYPERUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\boost_1_66_0;C:\Python36\include;..\..\..\..\hyperUI\include;..\..\..\..\hyperCore\include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <OpenMPSupport>false</OpenMPSupport>
+      <AdditionalOptions>/Zm256 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Python36\libs;..\..\..\..\..\Libs\boost_1_66_0\stage\lib;..\..\..\msvc2015\x64\Debug;..\..\..\..\hyperCore\msvc2015\x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openGL32.lib;glu32.lib;hyperUI_d.lib;hyperCore_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName).pyd $(SolutionDir)\..\dist\msvc2015\hyperui\$(ProjectName).pyd</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy Lib to Main Dir</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PYHYPERUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WINDOWS;_USRDLL;PYHYPERUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\boost_1_66_0;C:\Python36\include;..\..\..\..\hyperUI\include;..\..\..\..\hyperCore\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>openGL32.lib;glu32.lib;hyperUI.lib;hyperCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Python36\libs;..\..\..\..\..\Libs\boost_1_66_0\stage\lib;..\..\..\msvc2015\x64\Release;..\..\..\..\hyperCore\msvc2015\x64\Release</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy Lib to Main Dir</Message>
+      <Command>copy $(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName).pyd $(SolutionDir)\..\dist\msvc2015\hyperui\$(ProjectName).pyd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

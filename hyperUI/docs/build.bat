@@ -1,0 +1,1 @@
+c:\Python27\Scripts\mkdocs.exe build --clean

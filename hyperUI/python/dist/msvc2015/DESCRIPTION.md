@@ -1,0 +1,1 @@
+HyperUI is a real-time C++ OpenGL UI framework for Windows and macOS, available with Python bindings, with iOS support coming soon. It allows you to quickly create cross-platform, native UI-rich applications with responsive design and clean layout/logic separation.

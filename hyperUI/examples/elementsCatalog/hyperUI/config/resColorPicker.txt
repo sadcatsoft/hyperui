@@ -1,0 +1,341 @@
+#include "resUICommon.h"
+
+###############################################################################
+# Color Picker
+###############################################################################
+<fixedDialog>
+	id = colorPickerDialog
+	layer = uilColorPickerDialog
+	elemType = colorPicker
+
+	<window>
+		id = defDialogInner
+		windowBarImage = __none__
+		fillXLess = 0.0
+		fillYLess = 0.0
+
+		<elem>
+			id = cpdColorPalette
+			elemType = colorPalette
+			fillXLess = 110up
+			fillYLess = 27up
+			x = -100up
+			y = -17up
+		</elem>
+
+		<elem>
+			id = cpdRecentColors
+			fillXLess = 115up
+			height = 20up
+			x = -105up
+			y = -10up
+			elemType = recentColorsPalette 
+			align = { __none__, Bottom }
+			text = Recent Colors
+			textOffsetY = -15up
+			textHorAlign = Left
+			textPercOffsetX = -0.5
+			textOffsetX = 0up
+			objThirdAnim = largeSwatchDarkBackAnim
+		</elem>
+
+		<elem>
+			id = cpdColorContainer
+			align = { Right, Top }
+			x = 0up
+			y = -3.5up
+			width = 210up
+			height = 176up
+
+			# Current and old color
+			<elem>
+				id = cpdNewColorSwatch
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = -85up
+				y = -65up
+				width = 30up
+				height = 17up
+				<elem>
+					id = cpdNewColorSwatchText
+					text = new
+					textOffsetY = -14up
+					font = ftMainFontTinySmall
+				</elem>
+			</elem>
+
+			<elem>
+				id = cpdOldColorSwatch
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = -85up
+				y = -47up
+				width = 30up
+				height = 17up
+				<elem>
+					id = cpdOldColorSwatchText
+					text = current
+					textOffsetY = 14up
+					font = ftMainFontTinySmall
+				</elem>
+			</elem>
+
+			# Complementary colours
+			<elem>
+				id = cpdNewComplColorLabel
+				text = complementary colors
+				font = ftMainFontTinySmall
+				x = -59up
+				y = -78.5up
+				textHorAlign = Left
+			</elem>
+
+			<uiNumericLabeled>
+				id = cpdNumComplementaryColors
+				fillXLess = -1
+				width = 160up
+				x = 15up
+				y = -46up
+				<elem>
+					id = defLabel
+					text = # Complementary
+					textOffsetX = 4up
+				</elem>
+				<uiNumeric>
+					id = defLabeledNumUpdown
+					<elem>
+						id = defNumBox
+						text = 2
+					</elem>
+				</uiNumeric>
+			</uiNumericLabeled>
+
+			<elem>
+				id = cpdNewComplColor1
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = -45up
+				y = -65up
+				width = 30up
+				height = 17up
+			</elem>
+
+			<elem>
+				id = cpdNewComplColor2
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = -14up
+				y = -65up
+				width = 30up
+				height = 17up
+			</elem>
+
+			<elem>
+				id = cpdNewComplColor3
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = 17up
+				y = -65up
+				width = 30up
+				height = 17up
+			</elem>
+
+			<elem>
+				id = cpdNewComplColor4
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = 48up
+				y = -65up
+				width = 30up
+				height = 17up
+			</elem>
+
+			<elem>
+				id = cpdNewComplColor5
+				elemType = colorSwatch
+				image = largeSwatchDarkBackAnim
+				x = 79up
+				y = -65up
+				width = 30up
+				height = 17up
+			</elem>
+
+			# HSB Components
+			<uiRadioNumericLabeled>
+				id = cpdRadioHue
+				fillXLess = -1
+				align = { __none__, __none__ }
+				width = 95up
+				x = -57up
+				y = -18up
+				<customRadioButton>
+					id = defLabel
+					text = Hue
+					radioGroup = __colorPickerKeyComp__
+					action = uiaChangeColorModel
+					actionValue = Hue
+					checked = True
+				</customRadioButton>
+			</uiRadioNumericLabeled>
+
+			<uiRadioNumericLabeled>
+				id = cpdRadioSat
+				fillXLess = -1
+				align = { __none__, __none__ }
+				width = 95up
+				x = -57up
+				y = 2up
+				<customRadioButton>
+					id = defLabel
+					text = Sat
+					radioGroup = __colorPickerKeyComp__
+					action = uiaChangeColorModel
+					actionValue = Sat
+				</customRadioButton>
+			</uiRadioNumericLabeled>
+
+			<uiRadioNumericLabeled>
+				id = cpdRadioBri
+				fillXLess = -1
+				align = { __none__, __none__ }
+				width = 95up
+				x = -57up
+				y = 22up
+				<customRadioButton>
+					id = defLabel
+					text = Bri
+					radioGroup = __colorPickerKeyComp__
+					action = uiaChangeColorModel
+					actionValue = Bri
+				</customRadioButton>
+			</uiRadioNumericLabeled>
+
+
+			# RGB Components
+			<uiRadioNumericLabeled>
+				id = cpdRadioRed
+				fillXLess = -1
+				align = { __none__, __none__ }
+				width = 95up
+				x = 50up
+				y = -18up
+				<customRadioButton>
+					id = defLabel
+					text = Red
+					radioGroup = __colorPickerKeyComp__
+					action = uiaChangeColorModel
+					actionValue = Red
+				</customRadioButton>
+			</uiRadioNumericLabeled>
+
+			<uiRadioNumericLabeled>
+				id = cpdRadioGreen
+				fillXLess = -1
+				align = { __none__, __none__ }
+				width = 95up
+				x = 50up
+				y = 2up
+				<customRadioButton>
+					id = defLabel
+					text = Green
+					radioGroup = __colorPickerKeyComp__
+					action = uiaChangeColorModel
+					actionValue = Green
+				</customRadioButton>
+			</uiRadioNumericLabeled>
+
+			<uiRadioNumericLabeled>
+				id = cpdRadioBlue
+				fillXLess = -1
+				align = { __none__, __none__ }
+				width = 95up
+				x = 50up
+				y = 22up
+				<customRadioButton>
+					id = defLabel
+					text = Blue
+					radioGroup = __colorPickerKeyComp__
+					action = uiaChangeColorModel
+					actionValue = Blue
+				</customRadioButton>
+			</uiRadioNumericLabeled>
+
+			<topStringInput>
+				id = cpdWebColor
+				width = 65up
+				align = { __none__, __none__ }
+				x = -46up
+				y = 42up
+				fillXLess = -1
+				<elem>
+					id = defLabel
+					text = Hex #
+					layoutWidth = 10up
+					textOffsetX = -21up
+				</elem>
+				<elem>
+					id = defTextBox
+					width = 47up
+					layoutWidth = 47up
+					text = AAAAAA
+					textFormat = %s
+				</elem>
+			</topStringInput>
+
+			<elem>
+				id = cpdCopyWebColor
+				elemType = button
+				image = smallIcons:19
+				hoverImage = smallButtonHiAnim
+				width = 16up
+				height = 16up
+				x = -9up
+				y = 42up
+				action = uiaCopyHexColorToClipboard
+				tooltip = Copy hex color into clipboard
+			</elem>
+
+			<elem>
+				id = cpdColorPickerToggle
+				elemType = checkbox
+				width = 22up
+				height = 22up
+				image = toolButton
+				secondaryImage = toolButtonPressed
+				hoverImage = toolHover
+				action = uiaToggleColorPickerPickMode
+				tooltip = Pick a color from the image
+				x = 85up
+				y = 42up
+				checked = True
+				<elem>
+					id = cpdColorPickerToggleIcon
+					image = toolIcons:9
+				</elem>
+			</elem>
+
+		</elem>
+
+		<defaultButton>
+			id = cpdOk
+			text = OK
+			x = -74up
+			y = -10up		
+#action = NONE_SO_FAR
+			action = acceptNewColorFromPicker
+			align = { Right, Bottom }
+		</defaultButton>
+
+		<button>
+			id = cpdCancel
+			text = Cancel
+			x = -10up
+			y = -10up
+			action = cancelColorPicker
+#action = hideLayer
+#actionValue = uilColorPickerDialog
+			isDefaultCancelButton = True
+			align = { Right, Bottom }
+		</button>
+	</window>
+</fixedDialog>

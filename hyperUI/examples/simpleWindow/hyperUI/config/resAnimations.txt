@@ -1,0 +1,650 @@
+<animation definition>
+	id = __none__
+	file = __none__
+	firstFrame = 1
+	lastFrame = 1
+	frameStep = 1
+	frameWidth = -1
+	frameHeight = -1
+	zIndex = 2
+	format = png
+	blendingMode = bmNormal
+	resampleNearest = True
+	isUnloadable = True
+</animation>
+
+<animation>
+	id = windowBack
+	file = mainw
+	realContentWidth = 256up
+	realContentHeight = 256up
+	
+	cornerWidth = 4up
+	cornerHeight = 4up
+</animation>
+
+<animation>
+	id = submenuBack
+	file = submenu_back
+	realContentWidth = 71up
+	realContentHeight = 72up
+	
+	cornerWidth = 6up
+	cornerHeight = 6up
+</animation>
+
+<animation>
+	id = largeSwatchBackAnim
+	file = large_swatch
+
+	realContentWidth = 12up
+	realContentHeight = 12up	
+	cornerWidth = 3up
+	cornerHeight = 3up
+</animation>
+
+
+<animation>
+	id = largeSwatchDarkBackAnim
+	file = large_swatch_dark
+
+	realContentWidth = 12up
+	realContentHeight = 12up	
+	cornerWidth = 3up
+	cornerHeight = 3up
+</animation>
+
+
+<animation>
+	id = menuBack
+	file = menu_top_back
+	realContentWidth = 512up
+	realContentHeight = 20up
+
+	#realContentWidth = 30up
+	#realContentHeight = 15up
+	
+	#cornerWidth = 4up
+	#cornerHeight = 7.5up
+	#cornerHeight = 10up
+</animation>
+
+<animation>
+	id = secondMenuBarAnim
+	file = second_menu_bar_back
+	realContentWidth = 512up
+	realContentHeight = 20up
+	#cornerWidth = 4up
+	#cornerHeight = 10up
+</animation>
+
+<animation>
+	id = buttonUpAnim
+	file = button
+	realContentWidth = 55up
+	realContentHeight = 17up
+	cornerWidth = 5up
+	cornerHeight = 9up
+</animation>
+
+<animation>
+	id = buttonDownAnim
+	file = button_pressed
+	realContentWidth = 55up
+	realContentHeight = 17up
+	cornerWidth = 5up
+	cornerHeight = 9up
+</animation>
+
+<animation>
+	id = buttonDefaultAnim
+	file = button_default
+	realContentWidth = 55up
+	realContentHeight = 17up
+	cornerWidth = 5up
+	cornerHeight = 9up
+</animation>
+
+<animation>
+	id = buttonThinVertUpAnim
+	file = button_thin_vert
+	realContentWidth = 9up
+	realContentHeight = 25up
+	cornerWidth = 4.5up
+	cornerHeight = 4.5up
+</animation>
+
+<animation>
+	id = buttonThinVertDownAnim
+	file = button_thin_vert_pressed
+	realContentWidth = 9up
+	realContentHeight = 25up
+	cornerWidth = 4.5up
+	cornerHeight = 4.5up
+</animation>
+
+<animation>
+	id = vertSepBar
+	file = vsep
+	# With no shadow
+	realContentWidth = 3.5up
+	# With shadow
+	#realContentWidth = 7.5up
+	realContentHeight = 128up
+</animation>
+
+<animation>
+	id = vertBarHandle
+	file = vhandle
+	#realContentWidth = 7.5up
+	realContentHeight = 70up
+	realContentWidth = 3.5up
+	#realContentHeight = 74up
+</animation>
+
+<animation>
+	id = horSepBar
+	file = hsep
+	realContentWidth = 128up
+	#realContentHeight = 7.5up
+	#realContentWidth = 64up
+	realContentHeight = 3.5up
+</animation>
+
+<animation>
+	id = horSepBarLight
+	file = hsep_light
+	realContentWidth = 128up
+	realContentHeight = 15up
+</animation>
+
+<animation>
+	id = horBarHandle
+	file = hhandle
+	realContentWidth = 70up
+	#realContentHeight = 7.5up
+	realContentHeight = 3.5up
+</animation>
+
+<animation>
+	id = tabAnim
+	file = tab
+	realContentWidth = 61.5up
+	realContentHeight = 17up
+	
+	cornerWidth = 4up
+	cornerHeight = 8.5up
+</animation>
+
+<animation>
+	id = selTabAnim
+	file = tab_sel
+	realContentWidth = 61.5up
+	realContentHeight = 17up
+	
+	cornerWidth = 4up
+	cornerHeight = 8.5up
+</animation>
+
+<animation>
+	id = selImageWindowBack
+	file = sel_tab_body_back
+	realContentWidth = 256up
+	realContentHeight = 256up
+</animation>
+
+<animation>
+	id = tabCloseAnim
+	file = tab_close
+	realContentWidth = 7.5up
+	realContentHeight = 7.5up
+	zIndex = 3
+</animation>
+
+<animation>
+	id = tabCloseHoverAnim
+	file = tab_close_hover
+	realContentWidth = 7.5up
+	realContentHeight = 7.5up
+	zIndex = 3
+</animation>
+
+
+<animation>
+	id = separatorVertAnim
+	file = sep_vert
+	realContentWidth = 1up
+	realContentHeight = 12up
+</animation>
+
+<animation>
+	id = separatorHorAnim
+	file = sep_hor
+	realContentWidth = 16up
+	realContentHeight = 1up
+</animation>
+
+<animation>
+	id = smallButtonHiAnim
+	file = small_button_hi
+</animation>
+
+<animation>
+	id = tinyHiAnim
+	file = tiny_hi
+</animation>
+
+<animation>
+	id = menuHiAnim
+	file = menu_hi
+	# Height is smaller than it really is because
+	# then we don't get drawing artifacts for smaller sizable
+	# buttons.
+	realContentWidth = 16up
+	realContentHeight = 11up
+	cornerWidth = 2up
+	cornerHeight = 2up
+</animation>
+
+<animation>
+	id = menuArrow
+	file = menu_arrow
+	zIndex = 3
+</animation>
+
+<animation>
+	id = progressKnob
+	file = knob
+	zIndex = 3
+</animation>
+
+<animation>
+	id = sliderPopAnim
+	file = slider_pop
+	zIndex = 6
+</animation>
+
+<animation>
+	id = progressEmpty
+	file = prog_empty
+	realContentWidth = 62up
+	realContentHeight = 6.5up
+	cornerWidth = 4.5up
+	cornerHeight = 4up
+</animation>
+
+<animation>
+	id = progressFull
+	file = prog_full
+	realContentWidth = 62up
+	realContentHeight = 6.5up
+	cornerWidth = 4.5up
+	cornerHeight = 4up
+</animation>
+
+<animation>
+	id = textBox
+	file = text_box
+	realContentWidth = 40.5up
+	realContentHeight = 18up
+	cornerWidth = 5up
+	cornerHeight = 5up
+</animation>
+
+<animation>
+	id = exprTextBox
+	file = expr_text_box
+	realContentWidth = 40.5up
+	realContentHeight = 18up
+	cornerWidth = 5up
+	cornerHeight = 5up
+</animation>
+
+
+<animation>
+	id = emptyBack
+	file = empty_image_back
+	realContentWidth = 32up
+	realContentHeight = 32up
+</animation>
+
+#####################################################
+# Buttons
+#####################################################
+<animation>
+	id = buttonUp
+	file = button_up
+</animation>
+
+<animation>
+	id = buttonUpPressed
+	file = button_up_pressed
+</animation>
+
+<animation>
+	id = buttonDown
+	file = button_down
+</animation>
+
+<animation>
+	id = buttonDownPressed
+	file = button_down_pressed
+</animation>
+
+<animation>
+	id = ddButtonUp
+	file = dd_button
+</animation>
+
+<animation>
+	id = ddButtonPressed
+	file = dd_button_pressed
+</animation>
+
+<animation>
+	id = smallElemsAnim
+	file = small_elems_page
+	lastFrame = 4
+	frameWidth = 16up
+	frameHeight = 18up
+	resampleNearest = False
+</animation>
+
+<animation>
+	id = toolButton
+	file = tool_button
+</animation>
+
+<animation>
+	id = toolButtonPressed
+	file = tool_button_pressed
+</animation>
+
+<animation>
+	id = toolHover
+	file = tool_hover
+</animation>
+
+<animation>
+	id = windowTitleBar
+	file = win_title_bar
+	realContentWidth = 128up
+	realContentHeight = 16.5up
+	zIndex = 3
+</animation>
+
+<animation>
+	id = toolTitleBar
+	file = tool_title
+	realContentWidth = 31up
+	realContentHeight = 9.5up
+	zIndex = 3
+</animation>
+
+<animation>
+	id = scrollElemsAnim
+	file = scroll_elems_page
+	lastFrame = 4
+	frameWidth = 12up
+	frameHeight = 12up
+</animation>
+
+<animation>
+	id = vScrollBody
+	file = vscrollbar_body
+	realContentWidth = 10up
+	realContentHeight = 64up
+	cornerWidth = 5.5up
+	cornerHeight = 5.5up
+</animation>
+
+<animation>
+	# 20, 51
+	id = vScrollKnob
+	file = vscrollbar_knob
+</animation>
+
+<animation>
+	id = hScrollBody
+	file = hscrollbar_body
+	realContentWidth = 64up
+	realContentHeight = 10up
+	cornerWidth = 5.5up
+	cornerHeight = 5.5up
+</animation>
+
+<animation>
+	# 51, 20
+	id = hScrollKnob
+	file = hscrollbar_knob
+</animation>
+
+
+<animation>
+	id = tabHorLine
+	file = tab_hor_line
+	realContentWidth = 32up
+	realContentHeight = 2up
+</animation>
+
+<animation>
+	id = selLineAnim
+	file = sel_line
+</animation>
+
+<animation>
+	id = selLineSmoothAnim
+	file = sel_line_smooth
+	resampleNearest = False
+</animation>
+
+<animation>
+	id = selLineSmoothWhiteAnim
+	file = sel_line_smooth_white
+	resampleNearest = False
+</animation>
+
+<animation>
+	id = dropDownTextAreaBack
+	file = dropdown_text_area_back
+	realContentWidth = 56.5up
+	realContentHeight = 17up
+	cornerWidth = 6.5up
+	cornerHeight = 6.5up
+</animation>
+
+<animation>
+	id = dropDownExpAreaBack
+	file = dropdown_exp_area_back
+	realContentWidth = 56.5up
+	realContentHeight = 39up
+	cornerWidth = 6.5up
+	cornerHeight = 6.5up
+</animation>
+
+<animation>
+	id = imageDropDownExpAreaBack
+	file = image_dropdown_exp_area_back
+	realContentWidth = 56.5up
+	realContentHeight = 39up
+	cornerWidth = 6.5up
+	cornerHeight = 6.5up
+</animation>
+
+
+<animation>
+	id = roundSliderFull
+	file = round_slider_full
+	realContentWidth = 35up
+	realContentHeight = 35up
+#zIndex = 3
+</animation>
+
+<animation>
+	id = roundSliderEmpty
+	file = round_slider_empty
+</animation>
+
+<animation>
+	id = roundSliderKnob
+	file = round_slider_top
+	resampleNearest = False
+	zIndex = 3
+</animation>
+
+<animation>
+	id = tooltipBackSharp
+	file = tooltip_back_sharp
+	realContentWidth = 124up
+	realContentHeight = 39up
+	cornerWidth = 9up
+	cornerHeight = 9up
+	zIndex = 5
+</animation>
+
+#####################################################
+# Icons
+#####################################################
+<animation>
+	id = toolIcons
+	file = tools_page
+	lastFrame = 3
+	frameWidth = 16up
+	frameHeight = 16up
+	zIndex = 3
+</animation>
+
+<animation>
+	id = smallIcons
+	file = small_icons_page
+	lastFrame = 31
+	frameWidth = 16up
+	frameHeight = 16up
+	zIndex = 4
+</animation>
+
+<animation>
+	id = smallIconsSmooth
+	file = small_icons_smooth_page
+	lastFrame = 5
+	frameWidth = 16up
+	frameHeight = 16up
+	zIndex = 4
+	resampleNearest = False
+</animation>
+
+<animation>
+	id = tinyElems
+	file = tiny_elem_page
+	lastFrame = 20
+	frameWidth = 8up
+	frameHeight = 8up
+	zIndex = 4
+	resampleNearest = False
+</animation>
+
+<animation>
+	id = notchesAnim
+	file = notches_page
+	lastFrame = 20
+	frameWidth = 4up
+	frameHeight = 4up
+	zIndex = 2
+</animation>
+
+<animation>
+	id = sideButtons
+	file = side_buttons_page
+	lastFrame = 4
+	frameWidth = 11up
+	frameHeight = 25up
+</animation>
+
+<animation>
+	id = tempBorder
+	file = temp_border
+	realContentWidth = 15up
+	realContentHeight = 20.5up
+	cornerWidth = 4up
+	cornerHeight = 4up
+</animation>
+
+<animation>
+	id = statusBarBack
+	file = status_back
+	realContentWidth = 512up
+	realContentHeight = 15up
+</animation>
+
+<animation>
+	id = canvasSel
+	file = canvas_sel
+	realContentWidth = 128up
+	realContentHeight = 16up
+</animation>
+
+<animation>
+	id = smallMoreArrow
+	file = more_arrow
+	zIndex = 5
+</animation>
+
+<animation>
+	id = gradControlsPage
+	file = grad_controls_page
+	frameWidth = 24up
+	frameHeight = 24up
+	lastFrame = 4
+</animation>
+
+<animation>
+	id = medHandlesPage
+	file = med_handles_page
+	frameWidth = 16up
+	frameHeight = 16up
+	lastFrame = 6
+</animation>
+
+<animation>
+	id = canvasSizeGrid
+	file = canvas_size_grid
+</animation>
+
+<animation>
+	id = imageIcon
+	file = image_icon
+</animation>
+
+<animation>
+	id = snapZone
+	file = snap_zone
+	resampleNearest = False
+</animation>
+
+<animation>
+	id = thinTitleBar
+	file = thin_title_bar
+	realContentWidth = 173up
+	realContentHeight = 10up
+</animation>
+
+<animation>
+	id = dragDropAnims
+	file = drag_drop_page
+	frameWidth = 26up
+	frameHeight = 26up
+	lastFrame = 10
+</animation>
+
+<animation>
+	id = sizePopup
+	file = size_popup
+</animation>
+
+
+<animation>
+	id = spinnerSmall
+	file = spinner_samll
+	resampleNearest = False
+	zIndex = 4
+</animation>

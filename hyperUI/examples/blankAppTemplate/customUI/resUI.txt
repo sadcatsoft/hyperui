@@ -1,0 +1,17 @@
+# This includes a file with standard UI primitives specified
+# for us.
+#include "../hyperUI/config/resUICommon.h"
+
+<window>
+	id = mainWindow
+	layer = main
+	fillXLess = 0up
+	fillYLess = 0up
+	<button>
+		id = testButton
+		text = PRESS ME
+		action = showMessage
+		actionValue = The button has been pressed. Yay!
+		width = 100up
+	</button>
+</window>

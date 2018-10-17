@@ -1,0 +1,83 @@
+# This includes a file with standard UI primitives specified
+# for us.
+#include "../hyperUI/config/resUICommon.h"
+
+<selectableCell>
+	id = elemTypeCell
+	height = 32up
+</selectableCell>
+
+<selectableCell>
+	id = sampleCell
+	borderColor = { 255, 255, 255, 1.0 }
+</selectableCell>
+
+<selectableCell>
+	id = sampleHorCell
+	borderColor = { 255, 255, 255, 1.0 }
+	fillXLess = -1
+	fillYLess = 5.5up
+	y = -5up
+	width = 64up
+</selectableCell>
+
+<selectableCell>
+	id = gridCell
+	borderColor = { 255, 255, 255, 1.0 }
+	fillXLess = -1
+	fillYLess = -1
+	width = 64up
+	height = 32up
+</selectableCell>
+
+<button>
+	id = richTextButton
+	width = 150up
+</button>
+
+<submenu>
+	id = exampleFileSubmenu
+	layer = uilFileSubmenu
+	menuIds = { idFileOption1, __sep__, idFileOption2 }
+	menuLabels = { Show Test Message, __none__, Another Menu Item  }
+	menuActions = { showMessage, __none__, __none__ }
+	menuActionValues = { File Option 1 has been clicked., __none__, __none__ }
+</submenu>
+
+<submenu>
+	id = exampleEditSubmenu
+	layer = uilEditSubmenu
+	menuIds = { idEditOption1, __sep__, idEditOption2 }
+	menuLabels = { Edit Option 1, __none__, Edit Option 2  }
+	menuActions = { __none__, __none__, __none__ }
+</submenu>
+
+<window>
+	id = mainWindow
+	fillXLess = 0up
+	fillYLess = 0up
+	layer = firstLayer
+
+	elemType = TopSplitterElement
+	isVertical = True
+	splitterParms = { vertSepBar, vertBarHandle }
+	splitterPos = 0.25
+
+	<elem>
+		id = leftElemTypesTableHolder
+		image = __none__
+		<table>
+			id = leftElemTypesTable
+			cellSpacing = 0.5up
+			cellTypes = { elemTypeCell }
+			fillXLess = 0up
+			fillYLess = 0up
+		</table>
+
+	</elem>
+
+	<window>
+		id = rightContentsWindow
+		#include "resDemoElements.txt"
+	</window>
+</window>

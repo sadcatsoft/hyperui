@@ -1,0 +1,18 @@
+#pragma once
+
+#include "MenuContentsProvider.h"
+#include "IHandleActionCallback.h"
+#include "UIElementCallback.h"
+#include "UIAllocator.h"
+#include "IPlane.h"
+#include "IPlaneObject.h"
+#include "UIDragDropManager.h"
+#include "UIElement.h"
+#include "UIPlane.h"
+#include "IGenericIdentifier.h"
+#include "ResourceItemIdentifier.h"
+#include "ColorPickerColorGetter.h"
+#include "UILayoutManager.h"
+#include "ITableCellInfoProvider.h"
+#include "UIElementIdentifier.h"
+#include "UITabRenderer.h"

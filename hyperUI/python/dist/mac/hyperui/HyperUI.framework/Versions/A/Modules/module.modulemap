@@ -1,0 +1,6 @@
+framework module HyperUI {
+  umbrella header "HyperUI.h"
+
+  export *
+  module * { export * }
+}

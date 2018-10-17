@@ -1,0 +1,1151 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Properties and Element Types - HyperUI Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#common-properties" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="HyperUI Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                HyperUI Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Properties and Element Types
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="HyperUI Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    HyperUI Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="uiConcepts.html" title="Main UI Concepts" class="md-nav__link">
+      Main UI Concepts
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="advanced.html" title="Advanced Usage" class="md-nav__link">
+      Advanced Usage
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      UI Elements
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        UI Elements
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemStatic.html" title="Static Element" class="md-nav__link">
+      Static Element
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemButton.html" title="Button" class="md-nav__link">
+      Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemCheckbox.html" title="Checkbox" class="md-nav__link">
+      Checkbox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemRadioButton.html" title="Radio Button" class="md-nav__link">
+      Radio Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemSlider.html" title="Slider" class="md-nav__link">
+      Slider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemProgressBar.html" title="Progress Bar" class="md-nav__link">
+      Progress Bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemKnob.html" title="Rotary Knob" class="md-nav__link">
+      Rotary Knob
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemDropdown.html" title="Dropdown" class="md-nav__link">
+      Dropdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemInput.html" title="Single-line Input" class="md-nav__link">
+      Single-line Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemMultilineInput.html" title="Multi-line Input" class="md-nav__link">
+      Multi-line Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemTable.html" title="Table" class="md-nav__link">
+      Table
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemHorTable.html" title="Horizontal Table" class="md-nav__link">
+      Horizontal Table
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemGrid.html" title="Grid" class="md-nav__link">
+      Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemFixedGrid.html" title="Fixed Grid" class="md-nav__link">
+      Fixed Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemMenu.html" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemSplitter.html" title="Splitter" class="md-nav__link">
+      Splitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemRichText.html" title="Rich Text Element" class="md-nav__link">
+      Rich Text Element
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemColor.html" title="Color Element" class="md-nav__link">
+      Color Element
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Properties and Element Types
+      </label>
+    
+    <a href="builtInValues.html" title="Properties and Element Types" class="md-nav__link md-nav__link--active">
+      Properties and Element Types
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-properties" title="Common Properties" class="md-nav__link">
+    Common Properties
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-properties" title="General Properties" class="md-nav__link">
+    General Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizing-and-positioning-properties" title="Sizing and Positioning Properties" class="md-nav__link">
+    Sizing and Positioning Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-properties" title="Text Properties" class="md-nav__link">
+    Text Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-properties" title="Image Properties" class="md-nav__link">
+    Image Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-properties" title="Layout Properties" class="md-nav__link">
+    Layout Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-and-interaction-properties" title="Action and Interaction Properties" class="md-nav__link">
+    Action and Interaction Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-actions" title="Built-In Actions" class="md-nav__link">
+    Built-In Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-element-types" title="Built-In Element Types" class="md-nav__link">
+    Built-In Element Types
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="exampleProjects.html" title="Example Projects" class="md-nav__link">
+      Example Projects
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-properties" title="Common Properties" class="md-nav__link">
+    Common Properties
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-properties" title="General Properties" class="md-nav__link">
+    General Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizing-and-positioning-properties" title="Sizing and Positioning Properties" class="md-nav__link">
+    Sizing and Positioning Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-properties" title="Text Properties" class="md-nav__link">
+    Text Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-properties" title="Image Properties" class="md-nav__link">
+    Image Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-properties" title="Layout Properties" class="md-nav__link">
+    Layout Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-and-interaction-properties" title="Action and Interaction Properties" class="md-nav__link">
+    Action and Interaction Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-actions" title="Built-In Actions" class="md-nav__link">
+    Built-In Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-element-types" title="Built-In Element Types" class="md-nav__link">
+    Built-In Element Types
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Properties and Element Types</h1>
+                
+                <hr />
+<h2 id="common-properties">Common Properties</h2>
+<h3 id="general-properties">General Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>elemType</td>
+<td>Specifies the type of the element. Built-in types can be found below. Alternatively, this can be custom user class (such as <code>UserMyElement</code>), in which case the property value is set to the name of the C++ or Python class that you implement. See <a href="advanced.html">Custom UI Elements and Action Handling</a> for exact details on how to do that.</td>
+</tr>
+<tr>
+<td>transitionTime</td>
+<td>Speicifies the time, in seconds, of the animation length while a layer of elements is being show or hidden.</td>
+</tr>
+<tr>
+<td>zIndex</td>
+<td>This is the property that specifies the top-level element's z-order. Its value can be betwee 1 and 14, inclusive. Layers with higher values appear above layers with lower ones.</td>
+</tr>
+<tr>
+<td>opacity</td>
+<td>Specifies the opacity, in the range of [0, 1] of an element. Note that unlike <code>imageOpacity</code>, this applies to both the text and the image on the element, as well as all of its children.</td>
+</tr>
+<tr>
+<td>isHidden</td>
+<td>A boolean property which defaults to <em>False</em> which, if set to <em>True</em> hides the element (and makes it not clickable). This is used to have some elements hidden and control their visiblity programmatically from C++ or Python upon certain events completing.</td>
+</tr>
+<tr>
+<td>layer</td>
+<td>On top-level elements, specifies the name of the layer this element belongs to. Has no effect on child elements.</td>
+</tr>
+<tr>
+<td>backColor</td>
+<td>If specified, fills the element with the solid color provided.</td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td>If specified, draws a border around the element using the color provided. Note that it must be paired with <code>borderThickness</code>.</td>
+</tr>
+<tr>
+<td>borderThickness</td>
+<td>If specified, draws a border around the element of the specified thickness. Note that it must be paired with <code>borderColor</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sizing-and-positioning-properties">Sizing and Positioning Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x, y</td>
+<td>Specify the position, in ups, of the element. Note that for top-level element, the position is in the range of [0, screenWidth] for X axis and [0, screenHeight] for Y axis. However, for child elements, this is the position relative to their parent's center point, meaning that a child positioned at (0, 0) is located exactly at its parent's center.</td>
+</tr>
+<tr>
+<td>width, height</td>
+<td>Specifies the size, in ups, of the element. Note that these are mutually exclusive with their corresponding <em>uioFillParentXLessPadding/uioFillParentYLessPadding</em> properties. Not specifying the element's size using either of these types of properties makes it not clickable.</td>
+</tr>
+<tr>
+<td>boxOffsetX, boxOffsetY</td>
+<td>Specifies the offset, if any, in ups, of the element's clickable area.</td>
+</tr>
+<tr>
+<td>align</td>
+<td>This property aligns the element to its parent or the screen. It is set to an array of two values, one for horizontal alignment type, one for vertical. Currently, first value can be: <br><br>- Left - left-align the element's left edge, if it has a valid size, or its center, if it doesn't, to the parent container's left edge. <br> - Center - align the element's center to the parent container's center. Scale the center distance proportionally as the parent grows or shrinks. <br> - Right - right-align the element's right edge, if it has a valid size, or its center, if it doesn't, to the parent container's right edge.<br>- __none__ - do not perform any horizontal alignment.<br><br>The second value can be one of:<br><br>- Top - top-align the element's top edge, if it has a valid size, or its center, if it doesn't, to the parent container's top edge. <br> - Center - align the element's center to the parent container's center. Scale the center distance proportionally as the parent grows or shrinks. <br> - Bottom - bottom-align the element's bottom edge, if it has a valid size, or its center, if it doesn't, to the parent container's bottom edge.<br>- __none__ - do not perform any vertical alignment.<br><br>Note that the "parent's container" is defined as the screen area for top-level elements and as their immediate parent's area for children elements.</td>
+</tr>
+<tr>
+<td>fillXLess, fillYLess</td>
+<td>These specify that the element is to fill its parent's rectangle area less a certain padding. Each of these is mutually exclusive with a corresponding <code>width/height</code> property. These are used to create elements that automatically resize when their parents do. As above, the parent's area is defined as the screen area for top-level elements and as their immediate parent's area for children elements. The value specified for each of these properties, in ups, is subtract from each side of the parent's contianer. For example, if the parent element is of size 400up x 200up, specifying a child with these two properties set to 40up and 20up, respectively, means that the child element will be of the width (400 - 40*2) = 320up and of the height (200 - 20*2) = 160up.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-properties">Text Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>Specifies the text to show for this element.</td>
+</tr>
+<tr>
+<td>font</td>
+<td>Specifies the name of the font object, defined in <em>config/res_fonts.txt</em> and <em>config/res_fonts.txt</em> files.</td>
+</tr>
+<tr>
+<td>textColor</td>
+<td>Specifies the color to use when rendering the text of this element, if any. Values can be an array of numbers in the range [0, 1] (e.g. { 0.99, 0.85, 0.01, 0.95 }, which is a yellowish color with 95% opacity) or as hex values (e.g. #ff0000 which would be flat red color). You can also use 255-range values: { 255, 200, 200, 0.1 }</td>
+</tr>
+<tr>
+<td>textShadowColor</td>
+<td>Specifies the text drop shadow color. Note that the shadow offset also needs to be non-zero for this property to have any effect.</td>
+</tr>
+<tr>
+<td>textShadowOffsetX, textShadowOffsetY</td>
+<td>Offsets, in ups, for the text drop shadow. If not specified or both are 0, no shadow is drawn.</td>
+</tr>
+<tr>
+<td>textHorAlign</td>
+<td>Specifies the horizontal alignment of the text relative to the center of the element. Can be one of <em>Left, Center, Right</em> and if not specified, defaults to <em>Center</em>. If the value of <em>Left</em> is specified, the left edge of the text starts at the center of the element and extends further to the right; if the value of <em>Right</em> is set, the text's right edge (i.e. the end of the text) coincides with the element's center X position, and the rest of the text is positioned to the left.</td>
+</tr>
+<tr>
+<td>textVertAlign</td>
+<td>Specifies the vertical alignment of the text relative to the center of the element. Can be one of <em>Top, Center, Bottom</em> and if not specified, defaults to <em>Center</em>. If the value of <em>Top</em> is specified, the top edge of the text starts at the center of the element and extends further to the right; if the value of <em>Bottom</em> is set, the text's bottom edge (i.e. the end of the text) coincides with the element's center Y position, and the rest of the text is positioned upwards of the element's center.</td>
+</tr>
+<tr>
+<td>textOffsetX, textOffsetY</td>
+<td>Specifies the offset, in ups, of the text relative to its normal position (which includes text alignment).</td>
+</tr>
+<tr>
+<td>textWidth</td>
+<td>The value, specified in ups, tells the engine to start automatically wrapping the text if it extends beyond the length of this value. This property is mutually exclusive with <em>textWidthLessPadding</em>.</td>
+</tr>
+<tr>
+<td>textWidthLessPadding</td>
+<td>Similar to <code>fillXLess</code>, this property, if specified, forces the text to automatically wrap if it reaches beyond the given size. The size is computed as the size of this element (note: not it's parent) less specified padding from each side. Thus, it the elements width is 400ups, and this value is set to 20ups, the text will start wrapping after it exceeds (400 - 20*2) = 360up in length.</td>
+</tr>
+<tr>
+<td>textPercOffsetX, textPercOffsetY</td>
+<td>Similar to <code>textOffsetX/textOffsetY</code>, these propertyes control offset of the text relative to element's center. However, they are specified in the range [-1, 1] and are treated as a percentage of the element's size. For example, specifying the value of -0.5 will offset the text point to the left edge of the element (since it moves it to the left by 50% of the element's total width, and the default starting point is at the center). These properties are useful for controling the text alignment on resizable elements.</td>
+</tr>
+<tr>
+<td>textIsProtected</td>
+<td>If set to True, the text is protected and its contents is replaced with asterisks. Useful for password fields.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="image-properties">Image Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>image</td>
+<td>Specifies the image to draw at the center of the element. The value of this property is the value of the <code>id</code> property for the object being referenced in the <em>config/res_prelim_animations.txt</em> or your custom image collection.</td>
+</tr>
+<tr>
+<td>secondaryImage</td>
+<td>Used in some more complex UI elements to specify a secondary image. For example, in for a scrollbar, this property specifies the image to use as a background, while <code>image</code> specifies the image to use for the slider knob.</td>
+</tr>
+<tr>
+<td>backMode</td>
+<td>If set to <code>fill</code>, the image is intelligently tiled to fill the entire size of the element. If set to <code>scale</code>, the element's image is scaled to fill its size. Otherwise, the image is used untransformed, as it appears in the file. Note that for fill mode, the image definition must include <em>realContentWidth, realContentHeight, cornerW, cornerH</em> properties.</td>
+</tr>
+<tr>
+<td>overlayColor</td>
+<td>Specifies the color to overlap on top of the element image. Note that this is usually done with white bitmaps, since overlaying color on multi-color images results in nothing visually pleasing.</td>
+</tr>
+<tr>
+<td>imageOpacity</td>
+<td>An opacity value in the range [0, 1] that controls the opacity of this element's image. The default is assumed to be 1.0.</td>
+</tr>
+<tr>
+<td>imageScale</td>
+<td>A scale value, in the range of [0, 1] that controls the scale of this element's image. The default is 1.0.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="layout-properties">Layout Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>layout</td>
+<td>If set to <code>column</code>, forces all of its children to be automatically arranged horizontally in columns. The size of each child specified by its <code>width</code> property. You can also override it by providing a <code>layoutWidth</code> property, which, if set to a value greater than 1, specifies an explicit size; if set to a value less than one, it is treated as a percent of the available space (i.e. 0.25 would mean the element will be allocated 25% of the available space). Setting <code>layoutWidth</code> to exactly 1.0 will ensure this element fills any space remaining after computing widths for all other elements in this row.<br><br>If set to <code>column</code>, forces all of the element's children to be laid out vertically using their computed height. This is useful for laying out forms, for example, where a series of controls each have their own row. You also use the <code>marginTop</code> property on each child to specify top margins for elements.</td>
+</tr>
+<tr>
+<td>layoutWidth</td>
+<td>A numeric property that is used to layout the children horizontally when <code>layout</code> is set to <code>column</code>. This value can be either an up pixel width value (e.g. 200up) or, if it is &lt;= 1.0, it is treated as a percentage of the space available after all sibling elements with pixel widths have been laid out. Most commonly used with a value 1.0 on a single child while the rest of the children have specific pixel width to fill up the remaining space.</td>
+</tr>
+<tr>
+<td>marginTop</td>
+<td>Used in conjuction with <em>uioChildrenAutoLayoutStyle</em> to specify, if needed, the padding at the top of the element in the layout in ups.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="action-and-interaction-properties">Action and Interaction Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>Specifies the action string to process when an element is clicked. This string is passed up to every parent in the change through the <code>handleAction</code> method which can be overriden by a custom element or handled in the window class. The unprocessed or global actions are processed automatically or ignored if the action is custom.</td>
+</tr>
+<tr>
+<td>actionValue, actionValue2, actionValue3</td>
+<td>Action values passed along with the action type itself. These can be anything and are specific to each particular action type.</td>
+</tr>
+<tr>
+<td>isPassthrough</td>
+<td>If this is set to True, the element, even if it has a valid size set, becomes not clickable, and passes all of the clicks going through to its parent or children, depending on the layout. This is used if one wants to render an overlay over the entire screen but still pass clicks to the elements underneath, for example.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="built-in-actions">Built-In Actions</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Expected Action Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>showLayer</td>
+<td>actionValue = layerNameToShow</td>
+<td>Shows all elements with the specified layer</td>
+</tr>
+<tr>
+<td>hideLayer</td>
+<td>actionValue = layerNameToHide</td>
+<td>Hides all elements with the specified layer</td>
+</tr>
+<tr>
+<td>hideElement</td>
+<td>actionValue = elementId</td>
+<td>Hides a single element with the specified id</td>
+</tr>
+<tr>
+<td>hideTopParent</td>
+<td>none</td>
+<td>Find the top parent of the element which has this action attribute and hides all elements that belong to that layer</td>
+</tr>
+<tr>
+<td>hideAllLayers</td>
+<td>none</td>
+<td>Hides all currently shown layers</td>
+</tr>
+<tr>
+<td>hideLayerShowLayer</td>
+<td>actionValue = layerNameToHide<br>actionValue2 = layerNameToShow</td>
+<td>Hides all elements that belong to the layer specified in <code>actionValue</code> and then shows all elements that belong to the layer specified in <code>actionValue2</code></td>
+</tr>
+<tr>
+<td>hideLastShowLayer</td>
+<td>actionValue = layerNameToShow</td>
+<td>Hides the layer that was shown last and then shows all elements with the specified layer</td>
+</tr>
+<tr>
+<td>showLayerExclusive</td>
+<td>actionValue = layerNameToShow</td>
+<td>Hides all layers and then shows the layer specified</td>
+</tr>
+<tr>
+<td>toggleLayer</td>
+<td>actionValue = layerName</td>
+<td>If the specified layer is shown, hides it; if it was hidden, shows it</td>
+</tr>
+<tr>
+<td>showMessage</td>
+<td>actionValue = messageContents<br>(optional) actionValue2 = messageTitle</td>
+<td>Shows a text message with the contents specified in <code>actionValue</code>. If <code>actionValue2</code> is present, uses its value as a title</td>
+</tr>
+<tr>
+<td>quitApp</td>
+<td>none</td>
+<td>Shuts down the application</td>
+</tr>
+<tr>
+<td>openFile</td>
+<td>none</td>
+<td>Propmpts the application to open a file. Note that you must handle this yourself since the specific requirements vary so much, but can use the provided <code>Application::showOpenFileDialog()</code> function</td>
+</tr>
+<tr>
+<td>openFolder</td>
+<td>none</td>
+<td>Propmpts the application to open a folder. Note that you must handle this yourself since the specific requirements vary so much, but can use the provided <code>Application::showOpenFolderDialog()</code> function</td>
+</tr>
+<tr>
+<td>acceptNewColorFromPicker</td>
+<td>none</td>
+<td>When used in the color picker window, closes it and calls <code>Window::onAcceptNewColorFromPicker()</code></td>
+</tr>
+<tr>
+<td>cancelColorPicker</td>
+<td>none</td>
+<td>When used in the color picker window, closes it and cancels the color change</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="built-in-element-types">Built-In Element Types</h2>
+<table>
+<thead>
+<tr>
+<th>Element Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>static</td>
+<td>A static element that contains a piece of text, an image, or both</td>
+</tr>
+<tr>
+<td>button</td>
+<td>A button that can be clicked</td>
+</tr>
+<tr>
+<td>table</td>
+<td>A vertically-scrolling table with any number of rows and columns. Can contain individually-selectable custom cells.</td>
+</tr>
+<tr>
+<td>horizontalTable</td>
+<td>A horizontally-scrolling table.</td>
+</tr>
+<tr>
+<td>tableCell</td>
+<td>An element that represents a table or a grid cell.</td>
+</tr>
+<tr>
+<td>progress</td>
+<td>A progress bar element.</td>
+</tr>
+<tr>
+<td>slider</td>
+<td>A slider with a knob and a sliding range. Can be vertical or horizontal. Scrollbars are also built on this element.</td>
+</tr>
+<tr>
+<td>zoomWindow</td>
+<td>A window that shows zoomable and scrollable content (in both direction). Supports pinch-zoom and flicking to pan.</td>
+</tr>
+<tr>
+<td>textField</td>
+<td>A single-line text input field.</td>
+</tr>
+<tr>
+<td>multilineTextField</td>
+<td>A multiline text input field.</td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>A checkbox that can be toggled on and off.</td>
+</tr>
+<tr>
+<td>menu</td>
+<td>A horizontal or vertical menu where each entry can be a direct action item or a submenu.</td>
+</tr>
+<tr>
+<td>splitter</td>
+<td>A resizable horizontal or vertical splitter that splits its space into two panes.</td>
+</tr>
+<tr>
+<td>tabWindow</td>
+<td>A window that lays out all of its children as tabs.</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>A grid that supports laying out items in horizntal-first order.</td>
+</tr>
+<tr>
+<td>colorSwatch</td>
+<td>A rectangle which holds a color and supports changing it by using the built-in color picker when clicked.</td>
+</tr>
+<tr>
+<td>dropdown</td>
+<td>A dropdown/combobox element.</td>
+</tr>
+<tr>
+<td>gradientEdit</td>
+<td>A gradient editing element with preview.</td>
+</tr>
+<tr>
+<td>roundSlider</td>
+<td>A knob that can be turned left or right between minimum and maximum values.</td>
+</tr>
+<tr>
+<td>roundProgress</td>
+<td>A round progress bar.</td>
+</tr>
+<tr>
+<td>richText</td>
+<td>A multi-line text window that supports not only text, but any of the other elements above.</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="elemColor.html" title="Color Element" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Color Element
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="exampleProjects.html" title="Example Projects" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Example Projects
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.1",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

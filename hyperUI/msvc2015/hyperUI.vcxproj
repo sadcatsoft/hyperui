@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\examples\macBasic\simpleWindow\AppDelegate.h" />
+    <ClInclude Include="..\examples\macBasic\simpleWindow\common.h" />
+    <ClInclude Include="..\include\3D\3D.h" />
+    <ClInclude Include="..\include\3D\CachedClip3D.h" />
+    <ClInclude Include="..\include\3D\CachedFrame3D.h" />
+    <ClInclude Include="..\include\3D\CachedObject3D.h" />
+    <ClInclude Include="..\include\3D\CachedPart3D.h" />
+    <ClInclude Include="..\include\3D\Clip3DPlayer.h" />
+    <ClInclude Include="..\include\3D\GeometryUtils3D.h" />
+    <ClInclude Include="..\include\3D\IGeoData.h" />
+    <ClInclude Include="..\include\3D\Object3DManager.h" />
+    <ClInclude Include="..\include\3D\SObjInfo3D.h" />
+    <ClInclude Include="..\include\3D\TriangleCacher.h" />
+    <ClInclude Include="..\include\Animation\AnimatedPoint.h" />
+    <ClInclude Include="..\include\Animation\AnimatedValue.h" />
+    <ClInclude Include="..\include\Animation\Animation.h" />
+    <ClInclude Include="..\include\Animation\BezierAnimController.h" />
+    <ClInclude Include="..\include\Animation\GlowMotionEffect.h" />
+    <ClInclude Include="..\include\Animation\IAnimController.h" />
+    <ClInclude Include="..\include\Animation\IMotionEffect.h" />
+    <ClInclude Include="..\include\Animation\ShakeMotionEffect.h" />
+    <ClInclude Include="..\include\App\ActivityManager.h" />
+    <ClInclude Include="..\include\App\App.h" />
+    <ClInclude Include="..\include\App\Application.h" />
+    <ClInclude Include="..\include\App\DragDropManager.h" />
+    <ClInclude Include="..\include\App\IWindowFactory.h" />
+    <ClInclude Include="..\include\App\KeyManager.h" />
+    <ClInclude Include="..\include\App\SettingsCollection.h" />
+    <ClInclude Include="..\include\App\SkinManager.h" />
+    <ClInclude Include="..\include\App\TooltipManager.h" />
+    <ClInclude Include="..\include\App\Window.h" />
+    <ClInclude Include="..\include\App\WindowManager.h" />
+    <ClInclude Include="..\include\App\WindowManager.hpp" />
+    <ClInclude Include="..\include\Basic\AnimSequenceAddon.h" />
+    <ClInclude Include="..\include\Basic\BaseUtils.h" />
+    <ClInclude Include="..\include\Basic\Basic.h" />
+    <ClInclude Include="..\include\Basic\CombinedTransform.h" />
+    <ClInclude Include="..\include\Basic\FormatsManager.h" />
+    <ClInclude Include="..\include\Basic\GlobalIdGenerator.h" />
+    <ClInclude Include="..\include\Basic\GlobalIdGeneratorInternal.h" />
+    <ClInclude Include="..\include\Basic\IBaseImage.h" />
+    <ClInclude Include="..\include\Basic\ICursorManager.h" />
+    <ClInclude Include="..\include\Basic\ICustomDragRenderer.h" />
+    <ClInclude Include="..\include\Basic\Material.h" />
+    <ClInclude Include="..\include\Basic\PathTrail.h" />
+    <ClInclude Include="..\include\Basic\SBrushPoint.h" />
+    <ClInclude Include="..\include\Basic\SColorList.h" />
+    <ClInclude Include="..\include\Basic\SColorPoint.h" />
+    <ClInclude Include="..\include\Basic\STouchInfo.h" />
+    <ClInclude Include="..\include\Basic\SVertex3D.h" />
+    <ClInclude Include="..\include\Basic\SVertexInfo.h" />
+    <ClInclude Include="..\include\Basic\Types.h" />
+    <ClInclude Include="..\include\Basic\UICollections.h" />
+    <ClInclude Include="..\include\Basic\UIProperties.h" />
+    <ClInclude Include="..\include\Basic\UITypes.h" />
+    <ClInclude Include="..\include\Basic\UniqueIdGenerator.h" />
+    <ClInclude Include="..\include\Beziers\BezierCurveCollection.h" />
+    <ClInclude Include="..\include\Beziers\BezierCurveManager.h" />
+    <ClInclude Include="..\include\Beziers\BezierPolygonCollection.h" />
+    <ClInclude Include="..\include\Beziers\Beziers.h" />
+    <ClInclude Include="..\include\Beziers\DeformableBezier.h" />
+    <ClInclude Include="..\include\Beziers\Polygon2DCollection.h" />
+    <ClInclude Include="..\include\Beziers\Polyline2D.h" />
+    <ClInclude Include="..\include\Beziers\PolylineCollection.h" />
+    <ClInclude Include="..\include\Beziers\SAnimBezierSegment.h" />
+    <ClInclude Include="..\include\Beziers\SBezierCurve.h" />
+    <ClInclude Include="..\include\Beziers\SBezierPoint.h" />
+    <ClInclude Include="..\include\Beziers\SBezierSegment.h" />
+    <ClInclude Include="..\include\config.h" />
+    <ClInclude Include="..\include\Events\EventManager.h" />
+    <ClInclude Include="..\include\Events\Events.h" />
+    <ClInclude Include="..\include\Events\UIEvents.h" />
+    <ClInclude Include="..\include\HyperUI.h" />
+    <ClInclude Include="..\include\osx\BaseGlView.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\BaseWindowController.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\MacCommon.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\MainMenuManager.h" />
+    <ClInclude Include="..\include\Rendering\AccelImage.h" />
+    <ClInclude Include="..\include\Rendering\AccelImageChunk.h" />
+    <ClInclude Include="..\include\Rendering\CachedDeepSequence.h" />
+    <ClInclude Include="..\include\Rendering\CachedSequence.h" />
+    <ClInclude Include="..\include\Rendering\DrawingCache.h" />
+    <ClInclude Include="..\include\Rendering\GraphicsUtils.h" />
+    <ClInclude Include="..\include\Rendering\IOffscreenCacher.h" />
+    <ClInclude Include="..\include\Rendering\IThumbnailProvider.h" />
+    <ClInclude Include="..\include\Rendering\OpenGLStateCleaner.h" />
+    <ClInclude Include="..\include\Rendering\Rendering.h" />
+    <ClInclude Include="..\include\Rendering\RenderStateManager.h" />
+    <ClInclude Include="..\include\Rendering\RenderUtils.h" />
+    <ClInclude Include="..\include\Rendering\TextureAnimSequence.h" />
+    <ClInclude Include="..\include\Rendering\TextureManager.h" />
+    <ClInclude Include="..\include\StandardUI\StandardUI.h" />
+    <ClInclude Include="..\include\StandardUI\UIButtonElement.h" />
+    <ClInclude Include="..\include\StandardUI\UICheckboxElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIColorList.h" />
+    <ClInclude Include="..\include\StandardUI\UIColorPalette.h" />
+    <ClInclude Include="..\include\StandardUI\UIColorPicker.h" />
+    <ClInclude Include="..\include\StandardUI\UIColorSwatch.h" />
+    <ClInclude Include="..\include\StandardUI\UICurveEditor.h" />
+    <ClInclude Include="..\include\StandardUI\UIDropdown.h" />
+    <ClInclude Include="..\include\StandardUI\UIDropdownMenu.h" />
+    <ClInclude Include="..\include\StandardUI\UIDropdownTextPart.h" />
+    <ClInclude Include="..\include\StandardUI\UIExpressionEditTextFieldElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIExpressionTextFieldElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIFixedGrid.h" />
+    <ClInclude Include="..\include\StandardUI\UIGradientEdit.h" />
+    <ClInclude Include="..\include\StandardUI\UIGrid.h" />
+    <ClInclude Include="..\include\StandardUI\UIHistogram.h" />
+    <ClInclude Include="..\include\StandardUI\UIHorizontalTableElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIImageDropdown.h" />
+    <ClInclude Include="..\include\StandardUI\UIMenuElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIMultilineTextFieldElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIPopupElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIProgressElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIRecentColorsPalette.h" />
+    <ClInclude Include="..\include\StandardUI\UIRichTextElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIRoundProgressElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIRoundSliderElement.h" />
+    <ClInclude Include="..\include\StandardUI\UISliderElement.h" />
+    <ClInclude Include="..\include\StandardUI\UISlidingStopsEdit.h" />
+    <ClInclude Include="..\include\StandardUI\UISolidColorElement.h" />
+    <ClInclude Include="..\include\StandardUI\UISplitterElement.h" />
+    <ClInclude Include="..\include\StandardUI\UITableCellElement.h" />
+    <ClInclude Include="..\include\StandardUI\UITableElement.h" />
+    <ClInclude Include="..\include\StandardUI\UITabWindowElement.h" />
+    <ClInclude Include="..\include\StandardUI\UITextFieldElement.h" />
+    <ClInclude Include="..\include\StandardUI\UIThumbnailGrid.h" />
+    <ClInclude Include="..\include\StandardUI\UIUnitedNumeric.h" />
+    <ClInclude Include="..\include\StandardUI\UIZoomWindowElement.h" />
+    <ClInclude Include="..\include\Text\FontManager.h" />
+    <ClInclude Include="..\include\Text\OpenGLStringMeasurer.h" />
+    <ClInclude Include="..\include\Text\SCachedTextObject.h" />
+    <ClInclude Include="..\include\Text\SMeasuredString.h" />
+    <ClInclude Include="..\include\Text\STextParams.h" />
+    <ClInclude Include="..\include\Text\Text.h" />
+    <ClInclude Include="..\include\Text\TextCacher.h" />
+    <ClInclude Include="..\include\UI\ColorPickerColorGetter.h" />
+    <ClInclude Include="..\include\UI\IGenericIdentifier.h" />
+    <ClInclude Include="..\include\UI\IHandleActionCallback.h" />
+    <ClInclude Include="..\include\UI\IPlane.h" />
+    <ClInclude Include="..\include\UI\IPlaneObject.h" />
+    <ClInclude Include="..\include\UI\ITableCellInfoProvider.h" />
+    <ClInclude Include="..\include\UI\MenuContentsProvider.h" />
+    <ClInclude Include="..\include\UI\ResourceItemIdentifier.h" />
+    <ClInclude Include="..\include\UI\UI.h" />
+    <ClInclude Include="..\include\UI\UIAllocator.h" />
+    <ClInclude Include="..\include\UI\UIDragDropManager.h" />
+    <ClInclude Include="..\include\UI\UIElement.h" />
+    <ClInclude Include="..\include\UI\UIElementCallback.h" />
+    <ClInclude Include="..\include\UI\UIElementIdentifier.h" />
+    <ClInclude Include="..\include\UI\UILayoutManager.h" />
+    <ClInclude Include="..\include\UI\UIPlane.h" />
+    <ClInclude Include="..\include\UI\UITabRenderer.h" />
+    <ClInclude Include="..\include\Undo\Undo.h" />
+    <ClInclude Include="..\include\Undo\UndoBlock.h" />
+    <ClInclude Include="..\include\Undo\UndoContainerBlock.h" />
+    <ClInclude Include="..\include\Undo\UndoItemUIValueChange.h" />
+    <ClInclude Include="..\include\Undo\UndoManager.h" />
+    <ClInclude Include="..\include\Utils\ClipboardManager.h" />
+    <ClInclude Include="..\include\Utils\Utils.h" />
+    <ClInclude Include="..\include\windows\ApplicationRefreshLoop.h" />
+    <ClInclude Include="..\include\windows\IBaseForm.h" />
+    <ClInclude Include="..\include\windows\IBaseForm.hpp" />
+    <ClInclude Include="..\include\windows\msgpack.h" />
+    <ClInclude Include="..\include\windows\OpenGLWindow.h" />
+    <ClInclude Include="..\include\windows\OpenGLWindow.hpp" />
+    <ClInclude Include="..\include\windows\pktdef.h" />
+    <ClInclude Include="..\include\windows\TabletHeaders.h" />
+    <ClInclude Include="..\include\windows\TabletManager.h" />
+    <ClInclude Include="..\include\windows\Utils.h" />
+    <ClInclude Include="..\include\windows\WinIncludes.h" />
+    <ClInclude Include="..\include\windows\WinManagedInline.h" />
+    <ClInclude Include="..\include\windows\wintab.h" />
+    <ClInclude Include="..\source\osx\MacUtils.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\windows\WinManaged.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\3D\CachedClip3D.cpp" />
+    <ClCompile Include="..\source\3D\CachedFrame3D.cpp" />
+    <ClCompile Include="..\source\3D\CachedObject3D.cpp" />
+    <ClCompile Include="..\source\3D\CachedPart3D.cpp" />
+    <ClCompile Include="..\source\3D\Clip3DPlayer.cpp" />
+    <ClCompile Include="..\source\3D\GeometryUtils3D.cpp" />
+    <ClCompile Include="..\source\3D\Object3DManager.cpp" />
+    <ClCompile Include="..\source\3D\SObjInfo3D.cpp" />
+    <ClCompile Include="..\source\3D\TriangleCacher.cpp" />
+    <ClCompile Include="..\source\Animation\AnimatedPoint.cpp" />
+    <ClCompile Include="..\source\Animation\AnimatedValue.cpp" />
+    <ClCompile Include="..\source\Animation\BezierAnimController.cpp" />
+    <ClCompile Include="..\source\Animation\GlowMotionEffect.cpp" />
+    <ClCompile Include="..\source\Animation\IAnimController.cpp" />
+    <ClCompile Include="..\source\Animation\IMotionEffect.cpp" />
+    <ClCompile Include="..\source\Animation\ShakeMotionEffect.cpp" />
+    <ClCompile Include="..\source\App\ActivityManager.cpp" />
+    <ClCompile Include="..\source\App\Application.cpp" />
+    <ClCompile Include="..\source\App\DragDropManager.cpp" />
+    <ClCompile Include="..\source\App\IWindowFactory.cpp" />
+    <ClCompile Include="..\source\App\KeyManager.cpp" />
+    <ClCompile Include="..\source\App\SettingsCollection.cpp" />
+    <ClCompile Include="..\source\App\SkinManager.cpp" />
+    <ClCompile Include="..\source\App\TooltipManager.cpp" />
+    <ClCompile Include="..\source\App\Window.cpp" />
+    <ClCompile Include="..\source\Basic\AnimSequenceAddon.cpp" />
+    <ClCompile Include="..\source\Basic\BaseUtils.cpp" />
+    <ClCompile Include="..\source\Basic\CombinedTransform.cpp" />
+    <ClCompile Include="..\source\Basic\FormatsManager.cpp" />
+    <ClCompile Include="..\source\Basic\GlobalIdGenerator.cpp" />
+    <ClCompile Include="..\source\Basic\Material.cpp" />
+    <ClCompile Include="..\source\Basic\PathTrail.cpp" />
+    <ClCompile Include="..\source\Basic\SColorList.cpp" />
+    <ClCompile Include="..\source\Basic\SVertexInfo.cpp" />
+    <ClCompile Include="..\source\Basic\UniqueIdGenerator.cpp" />
+    <ClCompile Include="..\source\Beziers\BezierCurveCollection.cpp" />
+    <ClCompile Include="..\source\Beziers\BezierCurveManager.cpp" />
+    <ClCompile Include="..\source\Beziers\BezierPolygonCollection.cpp" />
+    <ClCompile Include="..\source\Beziers\DeformableBezier.cpp" />
+    <ClCompile Include="..\source\Beziers\Polygon2DCollection.cpp" />
+    <ClCompile Include="..\source\Beziers\Polyline2D.cpp" />
+    <ClCompile Include="..\source\Beziers\PolylineCollection.cpp" />
+    <ClCompile Include="..\source\Beziers\SAnimBezierSegment.cpp" />
+    <ClCompile Include="..\source\Beziers\SBezierCurve.cpp" />
+    <ClCompile Include="..\source\Beziers\SBezierSegment.cpp" />
+    <ClCompile Include="..\source\Events\EventManager.cpp" />
+    <ClCompile Include="..\source\Events\StandaloneEvent.cpp" />
+    <ClCompile Include="..\source\linux\ApplicationLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\ClipboardManagerLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\KeyManagerLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\TextureAnimSequenceLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\UIMenuElementLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\WindowLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\AccelImage.cpp" />
+    <ClCompile Include="..\source\Rendering\AccelImageChunk.cpp" />
+    <ClCompile Include="..\source\Rendering\CachedDeepSequence.cpp" />
+    <ClCompile Include="..\source\Rendering\CachedSequence.cpp" />
+    <ClCompile Include="..\source\Rendering\DrawingCache.cpp" />
+    <ClCompile Include="..\source\Rendering\GraphicsUtils.cpp" />
+    <ClCompile Include="..\source\Rendering\IOffscreenCacher.cpp" />
+    <ClCompile Include="..\source\Rendering\IThumbnailProvider.cpp" />
+    <ClCompile Include="..\source\Rendering\OpenGLStateCleaner.cpp" />
+    <ClCompile Include="..\source\Rendering\RenderStateManager.cpp" />
+    <ClCompile Include="..\source\Rendering\RenderUtils.cpp" />
+    <ClCompile Include="..\source\Rendering\TextureAnimSequence.cpp" />
+    <ClCompile Include="..\source\Rendering\TextureManagerCommon.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIButtonElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UICheckboxElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIColorList.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIColorPalette.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIColorPicker.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIColorSwatch.cpp" />
+    <ClCompile Include="..\source\StandardUI\UICurveEditor.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIDropdown.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIDropdownMenu.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIDropdownTextPart.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIExpressionEditTextFieldElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIExpressionTextFieldElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIFixedGrid.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIGradientEdit.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIGrid.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIHistogram.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIHorizontalTableElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIImageDropdown.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIMenuElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIMultilineTextFieldElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIPopupElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIProgressElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIRecentColorsPalette.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIRichTextElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIRoundProgressElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIRoundSliderElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UISliderElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UISlidingStopsEdit.cpp" />
+    <ClCompile Include="..\source\StandardUI\UISolidColorElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UISplitterElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UITableCellElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UITableElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UITabWindowElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UITextFieldElement.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIThumbnailGrid.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIUnitedNumeric.cpp" />
+    <ClCompile Include="..\source\StandardUI\UIZoomWindowElement.cpp" />
+    <ClCompile Include="..\source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\Text\FontManager.cpp" />
+    <ClCompile Include="..\source\Text\OpenGLStringMeasurer.cpp" />
+    <ClCompile Include="..\source\Text\SMeasuredString.cpp" />
+    <ClCompile Include="..\source\Text\TextCacher.cpp" />
+    <ClCompile Include="..\source\UI\IGenericIdentifier.cpp" />
+    <ClCompile Include="..\source\UI\IPlane.cpp" />
+    <ClCompile Include="..\source\UI\IPlaneObject.cpp" />
+    <ClCompile Include="..\source\UI\ResourceItemIdentifier.cpp" />
+    <ClCompile Include="..\source\UI\UIAllocator.cpp" />
+    <ClCompile Include="..\source\UI\UIDragDropManager.cpp" />
+    <ClCompile Include="..\source\UI\UIElement.cpp" />
+    <ClCompile Include="..\source\UI\UIElementIdentifier.cpp" />
+    <ClCompile Include="..\source\UI\UILayoutManager.cpp" />
+    <ClCompile Include="..\source\UI\UIPlane.cpp" />
+    <ClCompile Include="..\source\UI\UIPlaneActionHandlers.cpp" />
+    <ClCompile Include="..\source\UI\UITabRenderer.cpp" />
+    <ClCompile Include="..\source\Undo\UndoBlock.cpp" />
+    <ClCompile Include="..\source\Undo\UndoContainerBlock.cpp" />
+    <ClCompile Include="..\source\Undo\UndoItemUIValueChange.cpp" />
+    <ClCompile Include="..\source\Undo\UndoManager.cpp" />
+    <ClCompile Include="..\source\windows\ApplicationWinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\ClipboardManagerWinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\KeyManagerWinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\TabletManager.cpp" />
+    <ClCompile Include="..\source\windows\TextureAnimSequenceWinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\UIMenuElementWinManaged.cpp" />
+    <ClCompile Include="..\source\windows\Utils.cpp" />
+    <ClCompile Include="..\source\windows\WindowManaged.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\WinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\examples\macBasic\simpleWindow\AppDelegate.mm" />
+    <None Include="..\examples\macBasic\simpleWindow\main.m" />
+    <None Include="..\source\osx\Application.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\BaseGLView.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\BaseWindowController.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\ClipboardManager.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\KeyManager.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\MacUtils.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\MainMenuManager.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\TextureAnimSequence.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\UIMenuElement.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\Window.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93EE62BE-4F09-4781-B5BD-7CB27206877D}</ProjectGuid>
+    <RootNamespace>hyperUI</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\includes;.\source</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);HYPERUI_EXPORTS;WINDOWS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy HyperUI lib</Message>
+      <Command>copy $(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)_d.dll $(SolutionDir)\$(ProjectName)_d.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\source\windows;..\source;..\..\hyperCore\include;..\..\PolyIntersect;..\freetype\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDLL;%(PreprocessorDefinitions);HYPERUI_EXPORTS;WINDOWS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <OpenMPSupport>false</OpenMPSupport>
+      <ShowIncludes>false</ShowIncludes>
+      <UseFullPaths>false</UseFullPaths>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype26d.lib;openGL32.lib;glu32.lib;PolyIntersect_d.lib;hyperCore_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\hyperCore\msvc2015\$(Platform)\$(Configuration)\;$(SolutionDir)$(Platform)\$(Configuration)\;..\..\freetype\objs\vc2015\x64</AdditionalLibraryDirectories>
+      <Profile>false</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy HyperUI lib</Message>
+      <Command>copy $(Platform)\$(Configuration)\$(ProjectName)_d.dll $(SolutionDir)$(ProjectName)_d.dll</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>freetype26d.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\freetype\objs\vc2015\x64</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\include;..\source\windows;..\source;..\..\hyperCore\include;..\..\PolyIntersect;..\freetype\include;</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDLL;%(PreprocessorDefinitions);HYPERUI_EXPORTS;WINDOWS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>freetype26.lib;openGL32.lib;glu32.lib;PolyIntersect.lib;hyperCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\hyperCore\msvc2015\$(Platform)\$(Configuration)\;$(SolutionDir)$(Platform)\$(Configuration)\;..\..\freetype\objs\vc2015\x64</AdditionalLibraryDirectories>
+      <Profile>false</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy HyperUI lib</Message>
+      <Command>copy $(Platform)\$(Configuration)\$(ProjectName).dll $(SolutionDir)$(ProjectName).dll</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>\freetype26.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\freetype\objs\vc2015\x64</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

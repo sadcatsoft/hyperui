@@ -1,0 +1,6 @@
+framework module HyperCore {
+  umbrella header "HyperCore.h"
+
+  export *
+  module * { export * }
+}

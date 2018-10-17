@@ -1,0 +1,1072 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{569bb92e-3ae9-4c11-860b-cf07eeaa98ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\Basic">
+      <UniqueIdentifier>{b01b0c4c-89b6-454c-b412-17f69b937200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Beziers">
+      <UniqueIdentifier>{6e2cf186-3a24-4f0a-9d8f-c88b2ade1028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Animation">
+      <UniqueIdentifier>{f01380c4-5199-442a-9f27-a1b4cbf89884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\App">
+      <UniqueIdentifier>{2d7b9dc2-8946-48be-95c4-a9f0fa84d4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Beziers">
+      <UniqueIdentifier>{e644609d-1857-4813-ba73-4d82a235182c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Animation">
+      <UniqueIdentifier>{3883fdb8-1dd9-4d8b-99a0-5cb54bfbf22f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\App">
+      <UniqueIdentifier>{33256022-6eda-479a-8134-2f170a9b0f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Text">
+      <UniqueIdentifier>{c7d4f079-d782-440c-ae1e-48de6d037b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Rendering">
+      <UniqueIdentifier>{0b918ff5-e84f-45da-8af9-f4893267d88d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Rendering">
+      <UniqueIdentifier>{7c6e3827-1760-4d44-9533-b275301e7093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\3D">
+      <UniqueIdentifier>{51b1db50-f11f-4382-9051-2caa432086ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\3D">
+      <UniqueIdentifier>{c7f42c03-fe06-4f1f-a155-f864a488a2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\windows">
+      <UniqueIdentifier>{cd0b27a6-3785-47a1-a91f-43e95b1b1282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\osx">
+      <UniqueIdentifier>{ed9ccf9a-bd68-4892-9ed6-01a28bcadbd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\linux">
+      <UniqueIdentifier>{6d4b5288-772b-46b9-b8d1-283dedd52bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Utils">
+      <UniqueIdentifier>{ca1f3dc6-1325-4341-b43c-2cce1f7c8ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Events">
+      <UniqueIdentifier>{9047dc3b-fed0-471b-8c1a-aecad933942a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Events">
+      <UniqueIdentifier>{da66312d-dde5-4df4-b9c2-314c1ea49633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\UI">
+      <UniqueIdentifier>{7ab461c6-a152-4269-8b51-f8fe13d33bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\UI">
+      <UniqueIdentifier>{f129fbb6-e4af-4a7b-be31-7d4c8db2c54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Undo">
+      <UniqueIdentifier>{f636bafb-2ab0-4e72-9274-54b075573f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Undo">
+      <UniqueIdentifier>{f09ad78d-0798-48e8-a172-3a93779b7ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Text">
+      <UniqueIdentifier>{a26bb676-a10c-44d2-8236-3f977d662cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\StandardUI">
+      <UniqueIdentifier>{26aa01e7-acf2-44a5-b49a-229d853efbfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\StandardUI">
+      <UniqueIdentifier>{a62caa25-d98f-439a-a787-26ed3d0a92a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Basic">
+      <UniqueIdentifier>{ccdfb5e5-5ff2-4de0-881a-611395e7775b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\windows">
+      <UniqueIdentifier>{f914656c-c61f-470d-863b-0039b83c3675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\osx">
+      <UniqueIdentifier>{4ec3ee68-e253-4b7a-af56-09964f32d6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{e6ceb23e-fc73-4820-85d7-12aa046a43cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\macBasic">
+      <UniqueIdentifier>{9f9e449d-24b0-4993-b391-6361d5c214d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\macBasic\simpleWindow">
+      <UniqueIdentifier>{11231af0-51d7-4f83-8888-b9f43971b21d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\stdafx.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\HyperUI.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\SColorPoint.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\SVertexInfo.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\SBrushPoint.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Basic.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\IAnimController.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\Animation.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\CombinedTransform.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\UniqueIdGenerator.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\UIProperties.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\ActivityManager.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\App.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\Application.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\BezierCurveManager.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\BezierPolygonCollection.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\DeformableBezier.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\Polygon2DCollection.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\Polyline2D.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\PolylineCollection.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\SAnimBezierSegment.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\SBezierCurve.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\SBezierSegment.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\BezierCurveCollection.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\Beziers.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\AnimatedValue.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\BezierAnimController.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\AnimatedPoint.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Types.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\UICollections.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Beziers\SBezierPoint.h">
+      <Filter>include\Beziers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\GlobalIdGenerator.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\WindowManager.hpp">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\WindowManager.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\KeyManager.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\SCachedTextObject.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\STextParams.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\Text.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\GraphicsUtils.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\Rendering.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\ShakeMotionEffect.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\GlowMotionEffect.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Animation\IMotionEffect.h">
+      <Filter>include\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\OpenGLStateCleaner.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\SVertex3D.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\TriangleCacher.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\TextureAnimSequence.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Utils\Utils.h">
+      <Filter>include\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Utils\ClipboardManager.h">
+      <Filter>include\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\windows\WinManaged.h">
+      <Filter>source\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\AccelImageChunk.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\AccelImage.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\IBaseImage.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\IGeoData.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\CachedSequence.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\DrawingCache.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\TextureManager.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\RenderUtils.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\PathTrail.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\CachedDeepSequence.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\CachedPart3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\GeometryUtils3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\CachedFrame3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\Window.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\STouchInfo.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\RenderStateManager.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\SObjInfo3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Events\EventManager.h">
+      <Filter>include\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Events\UIEvents.h">
+      <Filter>include\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Events\Events.h">
+      <Filter>include\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\TooltipManager.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\DragDropManager.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\SkinManager.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\IThumbnailProvider.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UIAllocator.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UIElement.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UIElementCallback.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UIPlane.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\IHandleActionCallback.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\IPlane.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\IPlaneObject.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\MenuContentsProvider.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UI.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UIDragDropManager.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\SettingsCollection.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Undo\UndoManager.h">
+      <Filter>include\Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Undo\UndoItemUIValueChange.h">
+      <Filter>include\Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Undo\UndoContainerBlock.h">
+      <Filter>include\Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Undo\Undo.h">
+      <Filter>include\Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Undo\UndoBlock.h">
+      <Filter>include\Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\TextCacher.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Rendering\IOffscreenCacher.h">
+      <Filter>include\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\SMeasuredString.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\FontManager.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Text\OpenGLStringMeasurer.h">
+      <Filter>include\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Material.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\ColorPickerColorGetter.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\StandardUI.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIButtonElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UICheckboxElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIColorList.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIColorPalette.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIColorPicker.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIColorSwatch.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UICurveEditor.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIDropdown.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIDropdownMenu.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIDropdownTextPart.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIExpressionEditTextFieldElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIExpressionTextFieldElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIGradientEdit.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIGrid.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIHistogram.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIHorizontalTableElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIImageDropdown.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIMenuElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIMultilineTextFieldElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIPopupElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIProgressElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIRecentColorsPalette.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIRichTextElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIRoundProgressElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIRoundSliderElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UISliderElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UISlidingStopsEdit.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UISolidColorElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UISplitterElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UITableCellElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UITableElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UITabWindowElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UITextFieldElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIThumbnailGrid.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIUnitedNumeric.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIZoomWindowElement.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UILayoutManager.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\AnimSequenceAddon.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\ITableCellInfoProvider.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\SColorList.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\IGenericIdentifier.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UIElementIdentifier.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\UITabRenderer.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\ICustomDragRenderer.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\Clip3DPlayer.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\Object3DManager.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\CachedClip3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\3D\CachedObject3D.h">
+      <Filter>include\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\UITypes.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\ICursorManager.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\BaseUtils.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\UI\ResourceItemIdentifier.h">
+      <Filter>include\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\TabletHeaders.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\Utils.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\wintab.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\IBaseForm.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\msgpack.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\pktdef.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\FormatsManager.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\App\IWindowFactory.h">
+      <Filter>include\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\ApplicationRefreshLoop.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\TabletManager.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\IBaseForm.hpp">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\OpenGLWindow.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\OpenGLWindow.hpp">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\WinManagedInline.h">
+      <Filter>include\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\GlobalIdGeneratorInternal.h">
+      <Filter>include\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\windows\WinIncludes.h" />
+    <ClInclude Include="..\source\osx\MacUtils.h">
+      <Filter>source\osx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\MacCommon.h">
+      <Filter>include\osx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\BaseGlView.h">
+      <Filter>include\osx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\BaseWindowController.h">
+      <Filter>include\osx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\examples\macBasic\simpleWindow\common.h">
+      <Filter>examples\macBasic\simpleWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\examples\macBasic\simpleWindow\AppDelegate.h">
+      <Filter>examples\macBasic\simpleWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\MainMenuManager.h">
+      <Filter>source\osx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StandardUI\UIFixedGrid.h">
+      <Filter>include\StandardUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\BezierCurveManager.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\DeformableBezier.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\Polygon2DCollection.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\Polyline2D.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\PolylineCollection.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\SAnimBezierSegment.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\SBezierCurve.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\SBezierSegment.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\BezierPolygonCollection.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Beziers\BezierCurveCollection.cpp">
+      <Filter>source\Beziers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\AnimatedValue.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\BezierAnimController.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\AnimatedPoint.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\IAnimController.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\Application.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\ActivityManager.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\KeyManager.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\GraphicsUtils.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\IMotionEffect.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\ShakeMotionEffect.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Animation\GlowMotionEffect.cpp">
+      <Filter>source\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\OpenGLStateCleaner.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\TriangleCacher.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\TextureAnimSequenceLinux.cpp">
+      <Filter>source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\TextureAnimSequence.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\TextureAnimSequenceWinManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\ClipboardManagerLinux.cpp">
+      <Filter>source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\ClipboardManagerWinManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\WinManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\AccelImage.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\AccelImageChunk.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\CachedSequence.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\DrawingCache.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\TextureManagerCommon.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\RenderUtils.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\CachedDeepSequence.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\CachedPart3D.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\GeometryUtils3D.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\CachedFrame3D.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\Window.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\RenderStateManager.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\SObjInfo3D.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Events\EventManager.cpp">
+      <Filter>source\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Events\StandaloneEvent.cpp">
+      <Filter>source\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\TooltipManager.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\DragDropManager.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\SkinManager.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\IThumbnailProvider.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\IPlaneObject.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UIAllocator.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UIElement.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UIPlane.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\IPlane.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UIDragDropManager.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\SettingsCollection.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Undo\UndoContainerBlock.cpp">
+      <Filter>source\Undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Undo\UndoItemUIValueChange.cpp">
+      <Filter>source\Undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Undo\UndoManager.cpp">
+      <Filter>source\Undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Undo\UndoBlock.cpp">
+      <Filter>source\Undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Text\TextCacher.cpp">
+      <Filter>source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Rendering\IOffscreenCacher.cpp">
+      <Filter>source\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Text\OpenGLStringMeasurer.cpp">
+      <Filter>source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Text\SMeasuredString.cpp">
+      <Filter>source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Text\FontManager.cpp">
+      <Filter>source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UICurveEditor.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIDropdown.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIDropdownMenu.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIDropdownTextPart.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIExpressionEditTextFieldElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIExpressionTextFieldElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIGradientEdit.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIGrid.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIHistogram.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIHorizontalTableElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIImageDropdown.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIMenuElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIMultilineTextFieldElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIPopupElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIProgressElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIRecentColorsPalette.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIRichTextElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIRoundProgressElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIRoundSliderElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UISliderElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UISlidingStopsEdit.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UISolidColorElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UISplitterElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UITableCellElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UITableElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UITabWindowElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UITextFieldElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIThumbnailGrid.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIUnitedNumeric.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIZoomWindowElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIButtonElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UICheckboxElement.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIColorList.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIColorPalette.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIColorPicker.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIColorSwatch.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UILayoutManager.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\Material.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\PathTrail.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\SColorList.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\SVertexInfo.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\UniqueIdGenerator.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\AnimSequenceAddon.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\CombinedTransform.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\GlobalIdGenerator.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\IGenericIdentifier.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UIElementIdentifier.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UITabRenderer.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\UIPlaneActionHandlers.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\Object3DManager.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\Clip3DPlayer.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\CachedClip3D.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\3D\CachedObject3D.cpp">
+      <Filter>source\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\ApplicationWinManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\ApplicationLinux.cpp">
+      <Filter>source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\WindowLinux.cpp">
+      <Filter>source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\WindowManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\BaseUtils.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\KeyManagerWinManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\KeyManagerLinux.cpp">
+      <Filter>source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\UIMenuElementWinManaged.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\UIMenuElementLinux.cpp">
+      <Filter>source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UI\ResourceItemIdentifier.cpp">
+      <Filter>source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\Utils.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Basic\FormatsManager.cpp">
+      <Filter>source\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\App\IWindowFactory.cpp">
+      <Filter>source\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\TabletManager.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StandardUI\UIFixedGrid.cpp">
+      <Filter>source\StandardUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\osx\TextureAnimSequence.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\ClipboardManager.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\Application.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\Window.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\KeyManager.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\UIMenuElement.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\MacUtils.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\MainMenuManager.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\BaseWindowController.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\BaseGLView.mm">
+      <Filter>source\osx</Filter>
+    </None>
+    <None Include="..\examples\macBasic\simpleWindow\main.m">
+      <Filter>examples\macBasic\simpleWindow</Filter>
+    </None>
+    <None Include="..\examples\macBasic\simpleWindow\AppDelegate.mm">
+      <Filter>examples\macBasic\simpleWindow</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+cd freetype
+./configure --disable-shared --enable-static --disable-dependency-tracking
+make clean
+make -j8
+sudo make install
+
+cd ../libpng
+./configure --disable-shared --enable-static --disable-dependency-tracking
+make clean
+make -j8
+sudo make install
+
+cd ..

@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C79E95720ABCF2E008FAAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C79E95620ABCF2E008FAAC2 /* Assets.xcassets */; };
+		7C79E95D20ABCF2E008FAAC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C79E95C20ABCF2E008FAAC2 /* main.m */; };
+		7C79E96620AD323C008FAAC2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79E96520AD323C008FAAC2 /* OpenGL.framework */; };
+		7C79E96820AD3250008FAAC2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79E96720AD3250008FAAC2 /* AppKit.framework */; };
+		7C79E96A20AFB344008FAAC2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7C79E96920AFB344008FAAC2 /* AppDelegate.mm */; };
+		7CC22CCF20E73375008AEF2C /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC22CCE20E73375008AEF2C /* libfreetype.a */; };
+		7CF30AB121096DAD00AD2C84 /* HyperUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF30AB021096D9500AD2C84 /* HyperUI.framework */; };
+		7CF30AB321096DB100AD2C84 /* HyperCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF30AB221096DB100AD2C84 /* HyperCore.framework */; };
+		7CF30AC821096ECB00AD2C84 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF30AC221096ECB00AD2C84 /* main.cpp */; };
+		7CF30AC921096ECB00AD2C84 /* CustomUIElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF30AC421096ECB00AD2C84 /* CustomUIElement.cpp */; };
+		7CF30ACA21096ECB00AD2C84 /* SimpleWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF30AC521096ECB00AD2C84 /* SimpleWindow.cpp */; };
+		7CF30ACD21097D8B00AD2C84 /* hyperUI in Resources */ = {isa = PBXBuildFile; fileRef = 7CF30ACC21097D8B00AD2C84 /* hyperUI */; };
+		7CF30AD121097EEB00AD2C84 /* customGraphics_x1 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF30ACE21097EEB00AD2C84 /* customGraphics_x1 */; };
+		7CF30AD221097EEB00AD2C84 /* customUI in Resources */ = {isa = PBXBuildFile; fileRef = 7CF30ACF21097EEB00AD2C84 /* customUI */; };
+		7CF30AD321097EEB00AD2C84 /* customGraphics_x2 in Resources */ = {isa = PBXBuildFile; fileRef = 7CF30AD021097EEB00AD2C84 /* customGraphics_x2 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CC22CC920E72E94008AEF2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC22CC420E72E94008AEF2C /* HyperUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8B93C820A5451600F81657;
+			remoteInfo = HyperUI;
+		};
+		7CF30AAF21096D9500AD2C84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF30AAA21096D9500AD2C84 /* HyperUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8B93C820A5451600F81657;
+			remoteInfo = HyperUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C79E95020ABCF2D008FAAC2 /* simpleWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C79E95320ABCF2D008FAAC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C79E95620ABCF2E008FAAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C79E95B20ABCF2E008FAAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C79E95C20ABCF2E008FAAC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C79E95E20ABCF2E008FAAC2 /* simpleWindow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = simpleWindow.entitlements; sourceTree = "<group>"; };
+		7C79E96520AD323C008FAAC2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		7C79E96720AD3250008FAAC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7C79E96920AFB344008FAAC2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		7C79E97320AFB778008FAAC2 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		7CC22CC420E72E94008AEF2C /* HyperUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HyperUI.xcodeproj; path = ../../mac/HyperUI.xcodeproj; sourceTree = "<group>"; };
+		7CC22CCB20E72EAB008AEF2C /* HyperCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC22CCE20E73375008AEF2C /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../../../../../usr/local/lib/libfreetype.a; sourceTree = "<group>"; };
+		7CF30AAA21096D9500AD2C84 /* HyperUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HyperUI.xcodeproj; path = ../../../mac/HyperUI.xcodeproj; sourceTree = "<group>"; };
+		7CF30AB221096DB100AD2C84 /* HyperCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HyperCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF30AC221096ECB00AD2C84 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		7CF30AC321096ECB00AD2C84 /* CustomUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomUIElement.h; path = ../CustomUIElement.h; sourceTree = "<group>"; };
+		7CF30AC421096ECB00AD2C84 /* CustomUIElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CustomUIElement.cpp; path = ../CustomUIElement.cpp; sourceTree = "<group>"; };
+		7CF30AC521096ECB00AD2C84 /* SimpleWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleWindow.cpp; path = ../SimpleWindow.cpp; sourceTree = "<group>"; };
+		7CF30AC621096ECB00AD2C84 /* SimpleWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleWindow.h; path = ../SimpleWindow.h; sourceTree = "<group>"; };
+		7CF30AC721096ECB00AD2C84 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../stdafx.h; sourceTree = "<group>"; };
+		7CF30ACC21097D8B00AD2C84 /* hyperUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = hyperUI; path = ../hyperUI; sourceTree = "<group>"; };
+		7CF30ACE21097EEB00AD2C84 /* customGraphics_x1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = customGraphics_x1; path = ../customGraphics_x1; sourceTree = "<group>"; };
+		7CF30ACF21097EEB00AD2C84 /* customUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = customUI; path = ../customUI; sourceTree = "<group>"; };
+		7CF30AD021097EEB00AD2C84 /* customGraphics_x2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = customGraphics_x2; path = ../customGraphics_x2; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C79E94D20ABCF2D008FAAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF30AB321096DB100AD2C84 /* HyperCore.framework in Frameworks */,
+				7CF30AB121096DAD00AD2C84 /* HyperUI.framework in Frameworks */,
+				7CC22CCF20E73375008AEF2C /* libfreetype.a in Frameworks */,
+				7C79E96820AD3250008FAAC2 /* AppKit.framework in Frameworks */,
+				7C79E96620AD323C008FAAC2 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C79E94720ABCF2D008FAAC2 = {
+			isa = PBXGroup;
+			children = (
+				7CF30ACE21097EEB00AD2C84 /* customGraphics_x1 */,
+				7CF30AD021097EEB00AD2C84 /* customGraphics_x2 */,
+				7CF30ACF21097EEB00AD2C84 /* customUI */,
+				7CF30ACC21097D8B00AD2C84 /* hyperUI */,
+				7CF30ACB21096ED800AD2C84 /* mac */,
+				7CF30AC121096EB300AD2C84 /* source */,
+				7CF30AAA21096D9500AD2C84 /* HyperUI.xcodeproj */,
+				7C79E95120ABCF2D008FAAC2 /* Products */,
+				7C79E96420AD323C008FAAC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C79E95120ABCF2D008FAAC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C79E95020ABCF2D008FAAC2 /* simpleWindow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C79E96420AD323C008FAAC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CF30AB221096DB100AD2C84 /* HyperCore.framework */,
+				7CC22CCE20E73375008AEF2C /* libfreetype.a */,
+				7CC22CCB20E72EAB008AEF2C /* HyperCore.framework */,
+				7CC22CC420E72E94008AEF2C /* HyperUI.xcodeproj */,
+				7C79E96720AD3250008FAAC2 /* AppKit.framework */,
+				7C79E96520AD323C008FAAC2 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC22CC520E72E94008AEF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC22CCA20E72E94008AEF2C /* HyperUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF30AAB21096D9500AD2C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF30AB021096D9500AD2C84 /* HyperUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF30AC121096EB300AD2C84 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7CF30AC421096ECB00AD2C84 /* CustomUIElement.cpp */,
+				7CF30AC321096ECB00AD2C84 /* CustomUIElement.h */,
+				7CF30AC221096ECB00AD2C84 /* main.cpp */,
+				7CF30AC521096ECB00AD2C84 /* SimpleWindow.cpp */,
+				7CF30AC621096ECB00AD2C84 /* SimpleWindow.h */,
+				7CF30AC721096ECB00AD2C84 /* stdafx.h */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		7CF30ACB21096ED800AD2C84 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				7C79E95320ABCF2D008FAAC2 /* AppDelegate.h */,
+				7C79E97320AFB778008FAAC2 /* common.h */,
+				7C79E96920AFB344008FAAC2 /* AppDelegate.mm */,
+				7C79E95620ABCF2E008FAAC2 /* Assets.xcassets */,
+				7C79E95B20ABCF2E008FAAC2 /* Info.plist */,
+				7C79E95C20ABCF2E008FAAC2 /* main.m */,
+				7C79E95E20ABCF2E008FAAC2 /* simpleWindow.entitlements */,
+			);
+			name = mac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C79E94F20ABCF2D008FAAC2 /* simpleWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C79E96120ABCF2E008FAAC2 /* Build configuration list for PBXNativeTarget "simpleWindow" */;
+			buildPhases = (
+				7C79E94C20ABCF2D008FAAC2 /* Sources */,
+				7C79E94D20ABCF2D008FAAC2 /* Frameworks */,
+				7C79E94E20ABCF2D008FAAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = simpleWindow;
+			productName = test;
+			productReference = 7C79E95020ABCF2D008FAAC2 /* simpleWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C79E94820ABCF2D008FAAC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Sad Cat Software";
+				TargetAttributes = {
+					7C79E94F20ABCF2D008FAAC2 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7C79E94B20ABCF2D008FAAC2 /* Build configuration list for PBXProject "simpleWindow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C79E94720ABCF2D008FAAC2;
+			productRefGroup = 7C79E95120ABCF2D008FAAC2 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CF30AAB21096D9500AD2C84 /* Products */;
+					ProjectRef = 7CF30AAA21096D9500AD2C84 /* HyperUI.xcodeproj */;
+				},
+				{
+					ProductGroup = 7CC22CC520E72E94008AEF2C /* Products */;
+					ProjectRef = 7CC22CC420E72E94008AEF2C /* HyperUI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7C79E94F20ABCF2D008FAAC2 /* simpleWindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CC22CCA20E72E94008AEF2C /* HyperUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HyperUI.framework;
+			remoteRef = 7CC22CC920E72E94008AEF2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7CF30AB021096D9500AD2C84 /* HyperUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HyperUI.framework;
+			remoteRef = 7CF30AAF21096D9500AD2C84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C79E94E20ABCF2D008FAAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C79E95720ABCF2E008FAAC2 /* Assets.xcassets in Resources */,
+				7CF30AD221097EEB00AD2C84 /* customUI in Resources */,
+				7CF30AD121097EEB00AD2C84 /* customGraphics_x1 in Resources */,
+				7CF30ACD21097D8B00AD2C84 /* hyperUI in Resources */,
+				7CF30AD321097EEB00AD2C84 /* customGraphics_x2 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C79E94C20ABCF2D008FAAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C79E95D20ABCF2E008FAAC2 /* main.m in Sources */,
+				7CF30ACA21096ECB00AD2C84 /* SimpleWindow.cpp in Sources */,
+				7C79E96A20AFB344008FAAC2 /* AppDelegate.mm in Sources */,
+				7CF30AC821096ECB00AD2C84 /* main.cpp in Sources */,
+				7CF30AC921096ECB00AD2C84 /* CustomUIElement.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7C79E95F20ABCF2E008FAAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7C79E96020ABCF2E008FAAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7C79E96220ABCF2E008FAAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = simpleWindow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EAPZLDDS84;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/freetype2;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sadcatsoft.simpleWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7C79E96320ABCF2E008FAAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = simpleWindow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EAPZLDDS84;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/freetype2;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sadcatsoft.simpleWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C79E94B20ABCF2D008FAAC2 /* Build configuration list for PBXProject "simpleWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C79E95F20ABCF2E008FAAC2 /* Debug */,
+				7C79E96020ABCF2E008FAAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C79E96120ABCF2E008FAAC2 /* Build configuration list for PBXNativeTarget "simpleWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C79E96220ABCF2E008FAAC2 /* Debug */,
+				7C79E96320ABCF2E008FAAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C79E94820ABCF2D008FAAC2 /* Project object */;
+}

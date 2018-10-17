@@ -1,0 +1,7 @@
+# Configure specific Python version.
+   
+ using python : 3.6 : C:\\Python36\\python.exe
+   : C:\\Python36\\include #directory that contains pyconfig.h
+   : C:\\Python36\\libs    #directory that contains python27.lib
+   : <toolset>msvc-14.0 
+   : <python-debugging>on ;

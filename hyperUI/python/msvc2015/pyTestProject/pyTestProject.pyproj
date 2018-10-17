@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82d20f33-06f7-4f18-bdcf-caffc64c4779}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>..\..\dist\msvc2015\simpleWindow.py</StartupFile>
+    <SearchPath>..\..\dist\msvc2015\</SearchPath>
+    <WorkingDirectory>..\..\dist\msvc2015</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{6fb7dd48-2636-4b29-b790-111891b6cfbe}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterPath>
+    </InterpreterPath>
+    <Environment>PYTHONPATH=D:\ProjectAurora\Source\hyperUI\python\dist\msvc2015\;PYTHONPATH</Environment>
+    <DebugStdLib>False</DebugStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{6fb7dd48-2636-4b29-b790-111891b6cfbe}\3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\project\PyHyperUI.vcxproj">
+      <Name>pyhyperui</Name>
+      <Project>{9d11afb8-f77a-4f5d-8d7a-3770e8f474e9}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\dist\msvc2015\elementsCatalog.py">
+      <Link>elementsCatalog.py</Link>
+    </Compile>
+    <Compile Include="..\..\dist\msvc2015\simpleWindow.py">
+      <Link>simpleWindow.py</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

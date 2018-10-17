@@ -1,0 +1,52 @@
+# Other options available are:
+# These would be in percent of the font size [0-100]
+#kerning = 0
+#extraLineSpacing = 0
+
+<font>
+	id = ftMainFontTiny
+	file = main.ttf
+	defaultSize = 5up
+	kerning = 15
+	extraLineSpacing = 30
+</font>
+
+<font>
+	id = ftMainFontTinySmall
+	file = main.ttf
+	defaultSize = 5.5up
+	kerning = 10
+	extraLineSpacing = 30
+</font>
+
+<font>
+	id = ftMainFontSmall
+	file = main.ttf
+	defaultSize = 6.5up
+	kerning = 10
+	extraLineSpacing = 30
+</font>
+
+<font>
+	id = ftMainFontMedSmall
+	file = main.ttf
+	defaultSize = 7up
+	kerning = 7
+	extraLineSpacing = 30
+</font>
+
+<font>
+	id = ftMainFontMed
+	file = main.ttf
+	defaultSize = 8up
+	kerning = 0
+	extraLineSpacing = 30
+</font>
+
+<font>
+	id = ftMainFontLarge
+	file = main.ttf
+	defaultSize = 10up
+	kerning = 7
+	extraLineSpacing = 30
+</font>

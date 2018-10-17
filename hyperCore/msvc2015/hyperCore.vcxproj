@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Basic\Base64Coder.h" />
+    <ClInclude Include="..\include\Basic\BaseUtils.h" />
+    <ClInclude Include="..\include\Basic\BaseValue.h" />
+    <ClInclude Include="..\include\Basic\BinaryData.h" />
+    <ClInclude Include="..\include\Basic\DataTypes.h" />
+    <ClInclude Include="..\include\Basic\EdgeId.h" />
+    <ClInclude Include="..\include\Basic\Enums.h" />
+    <ClInclude Include="..\include\Basic\Environment.h" />
+    <ClInclude Include="..\include\Basic\GeometryUtils.h" />
+    <ClInclude Include="..\include\Basic\IBaseObject.h" />
+    <ClInclude Include="..\include\Basic\Logger.h" />
+    <ClInclude Include="..\include\Basic\Mutex.h" />
+    <ClInclude Include="..\include\Basic\PackedFile.h" />
+    <ClInclude Include="..\include\Basic\RecursiveSharedLock.h" />
+    <ClInclude Include="..\include\Basic\StringUtils.h" />
+    <ClInclude Include="..\include\Basic\TokenizeUtils.h" />
+    <ClInclude Include="..\include\config.h" />
+    <ClInclude Include="..\include\Curves\Curves.h" />
+    <ClInclude Include="..\include\Curves\SCubicCurve.h" />
+    <ClInclude Include="..\include\DataStructs\DataStructs.h" />
+    <ClInclude Include="..\include\DataStructs\SBBox2D.h" />
+    <ClInclude Include="..\include\DataStructs\SBBox3D.h" />
+    <ClInclude Include="..\include\DataStructs\SCircle.h" />
+    <ClInclude Include="..\include\DataStructs\SColor.h" />
+    <ClInclude Include="..\include\DataStructs\SCone2D.h" />
+    <ClInclude Include="..\include\DataStructs\SDate.h" />
+    <ClInclude Include="..\include\DataStructs\SGradient.h" />
+    <ClInclude Include="..\include\DataStructs\SGradientStop.h" />
+    <ClInclude Include="..\include\DataStructs\SIndexedColor.h" />
+    <ClInclude Include="..\include\DataStructs\SIntVector2D.h" />
+    <ClInclude Include="..\include\DataStructs\SMatrix2D.h" />
+    <ClInclude Include="..\include\DataStructs\SMatrix3.h" />
+    <ClInclude Include="..\include\DataStructs\SMatrix4.h" />
+    <ClInclude Include="..\include\DataStructs\SOBB.h" />
+    <ClInclude Include="..\include\DataStructs\SQuad2D.h" />
+    <ClInclude Include="..\include\DataStructs\SRawHistogramDataEntry.h" />
+    <ClInclude Include="..\include\DataStructs\SRay2D.h" />
+    <ClInclude Include="..\include\DataStructs\SRect2D.h" />
+    <ClInclude Include="..\include\DataStructs\SSize2D.h" />
+    <ClInclude Include="..\include\DataStructs\SString.h" />
+    <ClInclude Include="..\include\DataStructs\STriangle2D.h" />
+    <ClInclude Include="..\include\DataStructs\STriangle3D.h" />
+    <ClInclude Include="..\include\DataStructs\SUnitNumber.h" />
+    <ClInclude Include="..\include\DataStructs\SUVSet.h" />
+    <ClInclude Include="..\include\DataStructs\SVector2D.h" />
+    <ClInclude Include="..\include\DataStructs\SVector3D.h" />
+    <ClInclude Include="..\include\DataStructs\SVector4D.h" />
+    <ClInclude Include="..\include\HyperCore.h" />
+    <ClInclude Include="..\include\MathCore\BasicMath.h" />
+    <ClInclude Include="..\include\MathCore\MathCore.h" />
+    <ClInclude Include="..\include\MathCore\PerlinNoiseGenerator.h" />
+    <ClInclude Include="..\include\MathCore\RandomNumberGenerator.h" />
+    <ClInclude Include="..\include\osx\BookmarkManager.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\include\platformConfig.h" />
+    <ClInclude Include="..\include\ResourceData\CoreProperties.h" />
+    <ClInclude Include="..\include\ResourceData\DepthfirstResourceItemIterator.h" />
+    <ClInclude Include="..\include\ResourceData\ExpressionTypeManager.h" />
+    <ClInclude Include="..\include\ResourceData\IExpression.h" />
+    <ClInclude Include="..\include\ResourceData\PropertyMapper.h" />
+    <ClInclude Include="..\include\ResourceData\ResourceCollection.h" />
+    <ClInclude Include="..\include\ResourceData\ResourceCommon.h" />
+    <ClInclude Include="..\include\ResourceData\ResourceData.h" />
+    <ClInclude Include="..\include\ResourceData\ResourceItem.h" />
+    <ClInclude Include="..\include\ResourceData\ResourceManager.h" />
+    <ClInclude Include="..\include\ResourceData\ResourceProperty.h" />
+    <ClInclude Include="..\include\Storage\AlphaTreeMap.h" />
+    <ClInclude Include="..\include\Storage\AlphaTreeMap.hpp" />
+    <ClInclude Include="..\include\Storage\HashMap.h" />
+    <ClInclude Include="..\include\Storage\IdListContainer.h" />
+    <ClInclude Include="..\include\Storage\IdMapContainer.h" />
+    <ClInclude Include="..\include\Storage\LosslessDynamicArray.h" />
+    <ClInclude Include="..\include\Storage\LossyDynamicArray.h" />
+    <ClInclude Include="..\include\Storage\MemoryCacher.h" />
+    <ClInclude Include="..\include\Storage\RingBuffer.h" />
+    <ClInclude Include="..\include\Storage\StlStringMapCacher.h" />
+    <ClInclude Include="..\include\Storage\Storage.h" />
+    <ClInclude Include="..\include\Storage\StringMapCacher.h" />
+    <ClInclude Include="..\include\Utils\DateUtils.h" />
+    <ClInclude Include="..\include\Utils\FileUtils.h" />
+    <ClInclude Include="..\include\Utils\PathUtils.h" />
+    <ClInclude Include="..\include\Utils\Utils.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Base64Coder.cpp" />
+    <ClCompile Include="..\source\BaseUtils.cpp" />
+    <ClCompile Include="..\source\BinaryData.cpp" />
+    <ClCompile Include="..\source\DateUtilsCommon.cpp" />
+    <ClCompile Include="..\source\emscripten\BasicUtils.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\emscripten\MutexEmscripten.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\Environment.cpp" />
+    <ClCompile Include="..\source\ExpressionTypeManager.cpp" />
+    <ClCompile Include="..\source\FileUtilsAllPlatforms.cpp" />
+    <ClCompile Include="..\source\FileUtilsCommon.cpp" />
+    <ClCompile Include="..\source\GeometryUtils.cpp" />
+    <ClCompile Include="..\source\IExpression.cpp" />
+    <ClCompile Include="..\source\linux\BasicUtils.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\DateUtilsLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\MutexLinux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\Logger.cpp" />
+    <ClCompile Include="..\source\Math.cpp" />
+    <ClCompile Include="..\source\PackedFile.cpp" />
+    <ClCompile Include="..\source\PathUtils.cpp" />
+    <ClCompile Include="..\source\PerlinNoiseGenerator.cpp" />
+    <ClCompile Include="..\source\PropertyMapper.cpp" />
+    <ClCompile Include="..\source\RandomNumberGenerator.cpp" />
+    <ClCompile Include="..\source\RecursiveSharedLock.cpp" />
+    <ClCompile Include="..\source\ResourceCollection.cpp" />
+    <ClCompile Include="..\source\ResourceItem.cpp" />
+    <ClCompile Include="..\source\ResourceManager.cpp" />
+    <ClCompile Include="..\source\ResourceProperty.cpp" />
+    <ClCompile Include="..\source\SCircle.cpp" />
+    <ClCompile Include="..\source\SColor.cpp" />
+    <ClCompile Include="..\source\SCubicCurve.cpp" />
+    <ClCompile Include="..\source\SGradient.cpp" />
+    <ClCompile Include="..\source\SGradientStop.cpp" />
+    <ClCompile Include="..\source\SMatrix2D.cpp" />
+    <ClCompile Include="..\source\SOBB.cpp" />
+    <ClCompile Include="..\source\SRect2D.cpp" />
+    <ClCompile Include="..\source\SString.cpp" />
+    <ClCompile Include="..\source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\StringUtils.cpp" />
+    <ClCompile Include="..\source\SUnitNumber.cpp" />
+    <ClCompile Include="..\source\SVector2D.cpp" />
+    <ClCompile Include="..\source\TokenizeUtils.cpp" />
+    <ClCompile Include="..\source\windows\BasicUtils.cpp" />
+    <ClCompile Include="..\source\windows\DateUtilsWinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\FileUtilsWinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)$(TargetName).managed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(TargetName).managed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\MutexWin.cpp" />
+    <ClCompile Include="..\source\windows\stdafxManaged.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)$(TargetName).managed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(TargetName).managed.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\WinManaged.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)$(TargetName).managed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(TargetName).managed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\osx\BasicUtils.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\DateUtils.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\FileUtils.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\source\osx\Mutex.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6827FF80-A6FD-4ECE-9DEC-4E16D0095159}</ProjectGuid>
+    <RootNamespace>hyperCore</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\include;..\source</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDLL;%(PreprocessorDefinitions);HYPERCORE_EXPORTS;WINDOWS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>false</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(Platform)\$(Configuration)\$(ProjectName)_d.dll $(SolutionDir)\$(ProjectName)_d.dll</Command>
+      <Message>Copy HyperCore lib</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\include;..\source</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions);HYPERCORE_EXPORTS;WINDOWS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>false</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copy HyperCore lib</Message>
+      <Command>copy $(Platform)\$(Configuration)\$(ProjectName).dll $(SolutionDir)\$(ProjectName).dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\include\HyperCore.h">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\DataTypes.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Enums.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SMatrix2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SOBB.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SRay2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SRect2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SSize2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SVector2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SVector3D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SVector4D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\DataStructs.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SCircle.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SIntVector2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config.h">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SBBox3D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SBBox2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SUVSet.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SQuad2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\STriangle2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\STriangle3D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SCone2D.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SMatrix3.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SMatrix4.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SColor.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\StringUtils.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\TokenizeUtils.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\GeometryUtils.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Mutex.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\RecursiveSharedLock.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SString.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\CoreProperties.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ExpressionTypeManager.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\IExpression.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\PropertyMapper.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ResourceData.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ResourceProperty.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\IBaseObject.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\HashMap.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\Storage.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\LossyDynamicArray.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\RingBuffer.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\MemoryCacher.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\AlphaTreeMap.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\AlphaTreeMap.hpp">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\StringMapCacher.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\BinaryData.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Base64Coder.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Utils\FileUtils.h">
+      <Filter>Includes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Utils\Utils.h">
+      <Filter>Includes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Utils\PathUtils.h">
+      <Filter>Includes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\StlStringMapCacher.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ResourceItem.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ResourceManager.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ResourceCollection.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\ResourceCommon.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\BaseUtils.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Environment.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SGradientStop.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SGradient.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Curves\Curves.h">
+      <Filter>Includes\Curves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Curves\SCubicCurve.h">
+      <Filter>Includes\Curves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\PackedFile.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\EdgeId.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SUnitNumber.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\IdMapContainer.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\IdListContainer.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Utils\DateUtils.h">
+      <Filter>Includes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SDate.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\Logger.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SRawHistogramDataEntry.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ResourceData\DepthfirstResourceItemIterator.h">
+      <Filter>Includes\ResourceData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DataStructs\SIndexedColor.h">
+      <Filter>Includes\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Basic\BaseValue.h">
+      <Filter>Includes\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\include\MathCore\PerlinNoiseGenerator.h">
+      <Filter>Includes\MathCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MathCore\RandomNumberGenerator.h">
+      <Filter>Includes\MathCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MathCore\BasicMath.h">
+      <Filter>Includes\MathCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MathCore\MathCore.h">
+      <Filter>Includes\MathCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\osx\BookmarkManager.h">
+      <Filter>Includes\osx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\platformConfig.h">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Storage\LosslessDynamicArray.h">
+      <Filter>Includes\Storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Math.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SVector2D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SOBB.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SCircle.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SMatrix2D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SColor.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StringUtils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\GeometryUtils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\MutexWin.cpp">
+      <Filter>Source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RandomNumberGenerator.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RecursiveSharedLock.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SString.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PropertyMapper.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ExpressionTypeManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\IExpression.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ResourceProperty.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\BinaryData.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Base64Coder.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FileUtilsAllPlatforms.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\FileUtilsCommon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\FileUtilsWinManaged.cpp">
+      <Filter>Source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\WinManaged.cpp">
+      <Filter>Source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\stdafxManaged.cpp">
+      <Filter>Source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PathUtils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ResourceCollection.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ResourceItem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ResourceManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Environment.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\BasicUtils.cpp">
+      <Filter>Source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\MutexLinux.cpp">
+      <Filter>Source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\BasicUtils.cpp">
+      <Filter>Source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\emscripten\MutexEmscripten.cpp">
+      <Filter>Source\emscripten</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\emscripten\BasicUtils.cpp">
+      <Filter>Source\emscripten</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SGradientStop.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SGradient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SCubicCurve.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PerlinNoiseGenerator.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PackedFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\BaseUtils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TokenizeUtils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SUnitNumber.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DateUtilsCommon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\linux\DateUtilsLinux.cpp">
+      <Filter>Source\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\windows\DateUtilsWinManaged.cpp">
+      <Filter>Source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Logger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SRect2D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Includes">
+      <UniqueIdentifier>{e8de8951-38d6-4dac-8d2c-ce12be3be115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{8ceab712-09f4-4cb3-9789-e4f2fc82c3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Basic">
+      <UniqueIdentifier>{623d291e-fed6-40fc-92e1-9a481ddf8b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\DataStructs">
+      <UniqueIdentifier>{af9f5c80-4666-41d9-aab6-6f5273573a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\windows">
+      <UniqueIdentifier>{cf1f1f99-d512-4410-8311-168e33d1ef15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\ResourceData">
+      <UniqueIdentifier>{840c6eb1-05b2-4bb8-b441-31fba919166c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Storage">
+      <UniqueIdentifier>{45f44a73-790d-4642-bc14-2f79f96bbcff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Utils">
+      <UniqueIdentifier>{2a6c34c7-abfd-43b2-a107-e40c495be2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\osx">
+      <UniqueIdentifier>{22b61e27-63c0-49d4-a33e-6d3ead9afed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\linux">
+      <UniqueIdentifier>{63ab890d-160e-410c-87bb-08b308f8eb18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\emscripten">
+      <UniqueIdentifier>{89c3bf22-0856-4456-869c-afa49dcaf92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Curves">
+      <UniqueIdentifier>{62f50a7f-65b0-408b-8b0c-7e41e0a879ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\MathCore">
+      <UniqueIdentifier>{a574e8ca-a8b7-4d1e-90be-7fdc31ffe8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\osx">
+      <UniqueIdentifier>{988f9063-280f-4b56-9906-67eccdae5ef3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\osx\BasicUtils.mm">
+      <Filter>Source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\Mutex.mm">
+      <Filter>Source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\DateUtils.mm">
+      <Filter>Source\osx</Filter>
+    </None>
+    <None Include="..\source\osx\FileUtils.mm">
+      <Filter>Source\osx</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,913 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Advanced Usage - HyperUI Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#custom-ui-elements-and-action-handling" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="HyperUI Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                HyperUI Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Advanced Usage
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="HyperUI Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    HyperUI Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="uiConcepts.html" title="Main UI Concepts" class="md-nav__link">
+      Main UI Concepts
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Advanced Usage
+      </label>
+    
+    <a href="advanced.html" title="Advanced Usage" class="md-nav__link md-nav__link--active">
+      Advanced Usage
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-ui-elements-and-action-handling" title="Custom UI Elements and Action Handling" class="md-nav__link">
+    Custom UI Elements and Action Handling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-ui-elements" title="Updating UI Elements" class="md-nav__link">
+    Updating UI Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preprocessor-directives-in-resource-files" title="Preprocessor Directives in Resource Files" class="md-nav__link">
+    Preprocessor Directives in Resource Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-graphics" title="Custom Graphics" class="md-nav__link">
+    Custom Graphics
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      UI Elements
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        UI Elements
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemStatic.html" title="Static Element" class="md-nav__link">
+      Static Element
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemButton.html" title="Button" class="md-nav__link">
+      Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemCheckbox.html" title="Checkbox" class="md-nav__link">
+      Checkbox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemRadioButton.html" title="Radio Button" class="md-nav__link">
+      Radio Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemSlider.html" title="Slider" class="md-nav__link">
+      Slider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemProgressBar.html" title="Progress Bar" class="md-nav__link">
+      Progress Bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemKnob.html" title="Rotary Knob" class="md-nav__link">
+      Rotary Knob
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemDropdown.html" title="Dropdown" class="md-nav__link">
+      Dropdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemInput.html" title="Single-line Input" class="md-nav__link">
+      Single-line Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemMultilineInput.html" title="Multi-line Input" class="md-nav__link">
+      Multi-line Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemTable.html" title="Table" class="md-nav__link">
+      Table
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemHorTable.html" title="Horizontal Table" class="md-nav__link">
+      Horizontal Table
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemGrid.html" title="Grid" class="md-nav__link">
+      Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemFixedGrid.html" title="Fixed Grid" class="md-nav__link">
+      Fixed Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemMenu.html" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemSplitter.html" title="Splitter" class="md-nav__link">
+      Splitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemRichText.html" title="Rich Text Element" class="md-nav__link">
+      Rich Text Element
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="elemColor.html" title="Color Element" class="md-nav__link">
+      Color Element
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="builtInValues.html" title="Properties and Element Types" class="md-nav__link">
+      Properties and Element Types
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="exampleProjects.html" title="Example Projects" class="md-nav__link">
+      Example Projects
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-ui-elements-and-action-handling" title="Custom UI Elements and Action Handling" class="md-nav__link">
+    Custom UI Elements and Action Handling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-ui-elements" title="Updating UI Elements" class="md-nav__link">
+    Updating UI Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preprocessor-directives-in-resource-files" title="Preprocessor Directives in Resource Files" class="md-nav__link">
+    Preprocessor Directives in Resource Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-graphics" title="Custom Graphics" class="md-nav__link">
+    Custom Graphics
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Advanced Usage</h1>
+                
+                <hr />
+<h2 id="custom-ui-elements-and-action-handling">Custom UI Elements and Action Handling</h2>
+<p>In general, custom elements are used in two cases: when there is a custom UI widget that needs to be developed (such, for example, an odometer gauge with custom indicator animation and graphics) or when a screen with many subcontrols needs to be implemented and needs to set the data from the game onto the controls and then modify that data based on the player's actions on that screen. We will focus on the second such case here. Let's say we have an element that spans the entire screen with a single button in the center:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;uiElem&gt;</span>
+    id = helloWorldElement
+    layer = uilMyLayerName
+    elemType = etStatic
+    fillXLess = 0up
+    fillYLess = 0up
+    
+    <span class="nt">&lt;uiButton&gt;</span>
+        id = myButtonTest
+        elemType = etButton
+        width = 200up
+        height = 100up
+        text = Custom Button
+        action = uiaMyCustomAction
+        actionValue = Good Bye!
+        actionValue2 = 3.141592654
+    <span class="nt">&lt;/uiButton&gt;</span>
+<span class="nt">&lt;/uiElem&gt;</span>
+</pre></div>
+
+<p>Now, let's add a top-level custom class that can handle the action when the button is pressed. To do so, create and add the two files called UserHelloWorldParent.h and UserHelloWorldParent.cpp to your XCode or Visual Studio solution. If you're using Python, you can just add the corresponding Python snippet to your main script file:</p>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">C++</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// In UserHelloWorldParent.h:</span>
+<span class="cp">#pragma once</span>
+<span class="k">class</span> <span class="nc">UserHelloWorldParent</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UIElement</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">DECLARE_UIELEMENT</span><span class="p">(</span><span class="n">UserHelloWorldParent</span><span class="p">);</span>
+    <span class="k">virtual</span> <span class="kt">bool</span> <span class="nf">handleAction</span><span class="p">(</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strAction</span><span class="p">,</span> <span class="n">UIElement</span><span class="o">*</span> <span class="n">pSourceElem</span><span class="p">,</span> <span class="n">IBaseObject</span><span class="o">*</span> <span class="n">pData</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// In UserHelloWorldParent.cpp:</span>
+<span class="cp">#include</span> <span class="cpf">&quot;stdafx.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;UserHelloWorldParent.h&quot;</span><span class="cp"></span>
+
+<span class="n">UserHelloWorldParent</span><span class="o">::</span><span class="n">UserHelloWorldParent</span><span class="p">(</span><span class="n">UIPlane</span><span class="o">*</span> <span class="n">pParentPlane</span><span class="p">)</span>
+    <span class="o">:</span> <span class="n">UIElement</span><span class="p">(</span><span class="n">pParentPlane</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">onAllocated</span><span class="p">(</span><span class="n">pParentPlane</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">UserHelloWorldParent</span><span class="o">::~</span><span class="n">UserHelloWorldParent</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">onDeallocated</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UserHelloWorldParent</span><span class="o">::</span><span class="n">onAllocated</span><span class="p">(</span><span class="n">IBaseObject</span><span class="o">*</span> <span class="n">pData</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">UIElement</span><span class="o">::</span><span class="n">onAllocated</span><span class="p">(</span><span class="n">pData</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">UserHelloWorldParent</span><span class="o">::</span><span class="n">onDeallocated</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">UIElement</span><span class="o">::</span><span class="n">onDeallocated</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span> <span class="n">UserHelloWorldParent</span><span class="o">::</span><span class="n">handleAction</span><span class="p">(</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strAction</span><span class="p">,</span> <span class="n">UIElement</span><span class="o">*</span> <span class="n">pSourceElem</span><span class="p">,</span> <span class="n">IBaseObject</span><span class="o">*</span> <span class="n">pData</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">bool</span> <span class="n">bDidHandle</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">bDidHandle</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">UserHelloWorldParent</span><span class="p">(</span><span class="n">hyperui</span><span class="o">.</span><span class="n">UIElement</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">hyperui</span><span class="o">.</span><span class="n">UIElement</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">handle_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source_element</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="n">did_handle</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="k">return</span> <span class="n">did_handle</span>
+</pre></div></div>
+</div>
+<p>We also need to register our custom element type with HyperUI so it knows it's available. In C++-based projects, you can add the following line after initializing HyperUI; in Python-based projects, you can make the registration call anywhere before you create the main window:</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">C++</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">REGISTER_CUSTOM_UI_ELEMENT</span><span class="p">(</span><span class="n">UserHelloWorldParent</span><span class="p">);</span>
+</pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">hyperui</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">UserHelloWorldParent</span><span class="p">)</span>
+</pre></div></div>
+</div>
+<p>We now need to tell the top-level parent that we want it to be represented by the custom class we've just created. To do that, change the line:
+<div class="codehilite"><pre><span></span>elemType = etStatic
+</pre></div>
+to:
+<div class="codehilite"><pre><span></span>elemType = UserHelloWorldParent
+</pre></div>
+This will create one instance of your custom class for every one instance of this UI element.</p>
+<p>You can now compile the files, since they are fully ready to go. However, they still do nothing. Let's add a handler for our custom button action. In <code>UserHelloWorldParent.cpp</code>, a method called <code>handleAction()</code> exists (in Python, the same method exists in the snippet above). When a button is pressed, the application calls this method first on an element that was clicked, then on its parent, then on the parent of that parent, and so on, until it either reaches the topmost element or until one of these calls returns <code>true</code>, meaning that it handled the action.</p>
+<p>Let's modify our method as follows:</p>
+<div class="superfences-tabs">
+<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
+<label for="__tab_3_0">C++</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kt">bool</span> <span class="n">UserHelloWorldParent</span><span class="o">::</span><span class="n">handleAction</span><span class="p">(</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strAction</span><span class="p">,</span> <span class="n">UIElement</span><span class="o">*</span> <span class="n">pSourceElem</span><span class="p">,</span> <span class="n">IBaseObject</span><span class="o">*</span> <span class="n">pData</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">bool</span> <span class="n">bDidHandle</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">strAction</span> <span class="o">==</span> <span class="s">&quot;uiaMyCustomAction&quot;</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// pSourceElem is the button we clicked</span>
+        <span class="c1">// The call below will ask for its action value, which </span>
+        <span class="c1">// will return &quot;Good Bye!&quot;</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">pcsActionValue</span> <span class="o">=</span> <span class="n">pSourceElem</span><span class="o">-&gt;</span><span class="n">getStringProp</span><span class="p">(</span><span class="n">PropertyActionValue</span><span class="p">);</span>
+        
+        <span class="c1">// Also, just for kicks, let&#39;s ask for the second value.</span>
+        <span class="c1">// This will return 3.141592654</span>
+        <span class="n">FLOAT_TYPE</span> <span class="n">fNumValue2</span> <span class="o">=</span> <span class="n">pSourceElem</span><span class="o">-&gt;</span><span class="n">getNumProp</span><span class="p">(</span><span class="n">PropertyActionValue2</span><span class="p">);</span>
+    
+        <span class="c1">// Now, let&#39;s change the text on the button to the value of its action:</span>
+        <span class="k">this</span><span class="o">-&gt;</span><span class="n">setUiTextForChild</span><span class="p">(</span><span class="s">&quot;myButtonTest&quot;</span><span class="p">,</span> <span class="n">pcsActionValue</span><span class="p">);</span>
+        <span class="n">bDidHandle</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">bDidHandle</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_1" />
+<label for="__tab_3_1">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>    <span class="k">def</span> <span class="nf">handle_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source_element</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+
+        <span class="n">did_handle</span> <span class="o">=</span> <span class="bp">False</span>
+        
+        <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;uiaMyCustomAction&#39;</span><span class="p">:</span>
+            <span class="c1"># pSourceElem is the button we clicked</span>
+            <span class="c1"># The call below will ask for its action value, which </span>
+            <span class="c1"># will return &quot;Good Bye!&quot;</span>
+            <span class="n">action_value</span> <span class="o">=</span> <span class="n">source_element</span><span class="o">.</span><span class="n">actionValue</span>
+            
+            <span class="c1"># Also, just for kicks, let&#39;s ask for the second value.</span>
+            <span class="c1"># This will return 3.141592654</span>
+            <span class="n">num_value</span> <span class="o">=</span> <span class="n">source_element</span><span class="o">.</span><span class="n">actionValue2</span>
+
+            <span class="c1"># Now, let&#39;s change the text on the button to the value of its action:</span>
+            <span class="n">target_child</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_child_by_id</span><span class="p">(</span><span class="s1">&#39;myButtonTest&#39;</span><span class="p">)</span>
+            <span class="n">target_child</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">action_value</span>
+            
+            <span class="n">did_handle</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="k">return</span> <span class="n">did_handle</span>
+</pre></div></div>
+</div>
+<p>You can now compile and run the application. Clicking the button will now change its text to the value of its first action value.</p>
+<hr />
+<h2 id="updating-ui-elements">Updating UI Elements</h2>
+<p>HyperUI uses an explicit update mechanism. When an event that requires changes to other elements happens, you are expected to trigger the update call as following:</p>
+<div class="superfences-tabs">
+<input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
+<label for="__tab_4_0">C++</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// Let&#39;s say we&#39;re handling an action in a UIElement-based class.</span>
+<span class="c1">// The call below triggers an update for helloWorldElement element and all </span>
+<span class="c1">// of its children.</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">getUIPlane</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">updateElement</span><span class="p">(</span><span class="s">&quot;helloWorldElement&quot;</span><span class="p">);</span>
+</pre></div></div>
+<input name="__tabs_4" type="radio" id="__tab_4_1" />
+<label for="__tab_4_1">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Let&#39;s say we&#39;re handling an action in a UIElement-based class.</span>
+<span class="c1"># The call below triggers an update for helloWorldElement element and all </span>
+<span class="c1"># of its children.</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">update_element</span><span class="p">(</span><span class="s1">&#39;helloWorldElement&#39;</span><span class="p">)</span>
+</pre></div></div>
+</div>
+<p>This triggers the helloWorldElement and all of its child elements to receive the following call:</p>
+<div class="superfences-tabs">
+<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
+<label for="__tab_5_0">C++</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kt">void</span> <span class="n">UserHelloWorldParent</span><span class="o">::</span><span class="n">updateOwnData</span><span class="p">(</span><span class="n">SUpdateInfo</span><span class="o">&amp;</span> <span class="n">rRefreshInfo</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="c1">// Here, you can update anything you want</span>
+<span class="p">}</span>
+</pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_1" />
+<label for="__tab_5_1">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="c1"># Here, you can update anything you want</span>
+	<span class="k">pass</span>
+</pre></div></div>
+</div>
+<p>While this seems like a very basic update mechanism, in practice it turns out sufficient for all but the most complex applications. For the latter, there is a built-in, multi-threaded event-based system, which still needs to be documented.</p>
+<hr />
+<h2 id="preprocessor-directives-in-resource-files">Preprocessor Directives in Resource Files</h2>
+<p>Our resource files support several basic preprocessor defines. In particular, you can include other resource files as following:
+<div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;../hyperUI/config/resUICommon.h&quot;</span><span class="cp"></span>
+</pre></div>
+Note that the include path is relative to the file it is being included from, and may appear anywhere in the file, including inside existing elements.</p>
+<p>In C++-based projects, we also support <code>#ifdef</code> and <code>#if defined</code> macros:
+<div class="codehilite"><pre><span></span><span class="nt">&lt;elem&gt;</span>
+	id = testElementId
+#ifdef MY_CUSTOM_VARIABLE
+	text = Condition 1
+#else
+	text = Condition 2
+#endif
+<span class="nt">&lt;/elem&gt;</span>
+</pre></div></p>
+<p>In order to evaluate whether the condition is true or false, it is necessary to provide a custom callback before HyperUI is initialized:
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">CustomVarCheckCallback</span><span class="o">:</span> <span class="k">public</span> <span class="n">IVariableDefinedCheckCallback</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+	<span class="n">CustomVarCheckCallback</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+	<span class="k">virtual</span> <span class="o">~</span><span class="n">CustomVarCheckCallback</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+	<span class="k">virtual</span> <span class="kt">bool</span> <span class="n">getIsVariableDefined</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">pcsVar</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Evaluate whether the variable is defined or not according</span>
+		<span class="c1">// to your logic and return true or false:</span>
+		<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Register it with the ResourceManager:</span>
+<span class="n">ResourceManager</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">setCallback</span><span class="p">(</span><span class="k">new</span> <span class="n">CustomVarCheckCallback</span><span class="p">());</span>
+</pre></div></p>
+<hr />
+<h2 id="custom-graphics">Custom Graphics</h2>
+<p>It is also possible to use custom graphics for your application. For this, we need to provide the graphics in the correct location, add a resource file that defines properties on our custom graphics files, and then change our elements to use them.</p>
+<p>First, in the root folder of your project, create two folders named <code>customGraphics_x1</code> and <code>customGraphics_x2</code>. These will contain the two versions of your images - one for regular-density displays, and another for high-density displays. Place your two versions of the png image file into each folder, making sure file dimensions are a power of two (i.e. 32x32). Let's say the file is named <code>sample_icon.png</code>.</p>
+<p>Next, we need to create a custom resource collection to tell HyperUI that the files is there. In the same folder where your custom UI elements are specified (<code>customUI</code>) create another file called <code>resGraphics.txt</code>, and copy-paste the following content there:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;animation&gt;</span>
+	id = customIcon
+	file = sample_icon
+<span class="nt">&lt;/animation&gt;</span>
+</pre></div>
+
+<p>Above, we basically bind the file name (<code>sample_icon</code>) to the id (<code>customIcon</code>). In general, this is also the place where we can provide other attributes of the file, such as corner sizes for tiling it, optional compressed texture formats, and other values.</p>
+<p>Now we need to tell HyperUI to actually load this collection, and use it as an additional graphics collection:</p>
+<div class="superfences-tabs">
+<input name="__tabs_6" type="radio" id="__tab_6_0" checked="checked" />
+<label for="__tab_6_0">C++</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// This adds the collection to resource manager using a relative path,</span>
+<span class="c1">// and marks it as a graphics collection.</span>
+<span class="n">ResourceManager</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">addCollection</span><span class="p">(</span><span class="s">&quot;customUI&quot;</span> <span class="n">FOLDER_SEP</span> <span class="s">&quot;resGraphics.txt&quot;</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="n">CollectionRoleGraphics</span><span class="p">,</span> <span class="s">&quot;customGraphics&quot;</span><span class="p">);</span>
+</pre></div></div>
+<input name="__tabs_6" type="radio" id="__tab_6_1" />
+<label for="__tab_6_1">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">module_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">hyperui</span><span class="o">.</span><span class="n">add_collection</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">module_path</span><span class="p">,</span> <span class="s2">&quot;customUI&quot;</span><span class="p">,</span> <span class="s2">&quot;resGraphics.txt&quot;</span><span class="p">),</span> <span class="n">hyperui</span><span class="o">.</span><span class="n">CollectionRole</span><span class="o">.</span><span class="n">Graphics</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">module_path</span><span class="p">,</span> <span class="s2">&quot;customGraphics&quot;</span><span class="p">))</span>
+</pre></div></div>
+</div>
+<p>Finally, we need to tell the element to actually use this image. We can do that simply by specifying the image property:
+<div class="codehilite"><pre><span></span>image = customIcon
+</pre></div></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="uiConcepts.html" title="Main UI Concepts" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Main UI Concepts
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="elemStatic.html" title="Static Element" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Static Element
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.1",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

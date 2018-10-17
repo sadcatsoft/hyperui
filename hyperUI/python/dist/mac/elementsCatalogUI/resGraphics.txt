@@ -1,0 +1,4 @@
+<animation>
+	id = customIcon
+	file = sample_icon
+</animation>

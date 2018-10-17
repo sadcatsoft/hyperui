@@ -1,0 +1,51 @@
+./bootstrap.sh --with-python-version=3.6 --with-python-root=/Library/Frameworks/Python.framework/Versions/3.6 --with-python=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6
+
+./b2 address-model=64 -j 8 link=static,shared runtime-link=shared --with-python python=3.6 include="/Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m"
+
+
+Example test:
+/* hellopython.cpp */
+
+#include <iostream>
+
+#include <boost/python.hpp>
+#include <boost/python/module_init.hpp>
+
+using namespace boost::python;
+
+void greet() {
+	// Retrieve the main module.
+	object main = import("__main__");
+
+	// Retrieve the main module's namespace
+	object global(main.attr("__dict__"));
+
+	// Define greet function in Python.
+	object result = exec("def greet():                   \n"
+			"\timport sys \n"
+			"\tprint(sys.version_info)\n"
+			"\treturn 'Hello from Python 3!' \n", global, global);
+
+	// Create a reference to it.
+	object greet = global["greet"];
+
+	// Call it.
+	std::string message = extract < std::string > (greet());
+	std::cout << message << std::endl;
+}
+
+int main(int argc, char* argv[]) {
+	Py_Initialize();
+	greet();
+	Py_Finalize();
+	return 0;
+}
+
+
+Build using:
+clang++ hellopython.cpp -I /Users/oleg/Documents/Libs/boost_1_66_0 -I /Library/Frameworks/Python.framework/Versions/3.6/include/python3.6m -L /Users/oleg/Documents/Libs/boost_1_66_0/stage/lib -L /Library/Frameworks/Python.framework/Versions/3.6/lib/ -lboost_python -lpython3.6
+
+
+install_name_tool -change "@rpath/HyperCore.framework/Versions/A/HyperCore" "@loader_path/HyperCore.framework/Versions/A/HyperCore" pyhyperui2/pyhyperui.so 
+install_name_tool -change "@rpath/HyperUI.framework/Versions/A/HyperUI" "@loader_path/HyperUI.framework/Versions/A/HyperUI" pyhyperui2/pyhyperui.so 
+otool -L pyhyperui2/pyhyperui.so

@@ -1,0 +1,48 @@
+# This includes a file with standard UI primitives specified
+# for us.
+#include "../hyperUI/config/resUICommon.h"
+
+<mainMenu>
+	id = mainMenu
+	layer = firstLayer
+	
+	menuIds = {	idFile,	idEdit }
+	menuLabels = { File, Edit }
+	menuSubitems = { __none__, __none__ }
+	menuActions = {	__none__, __none__ }
+	menuActionValues = { __none__, __none__ }
+</mainMenu>
+
+<window>
+	id = exampleElement
+	fillXLess = 0up
+	fillYLess = 0up
+	layer = firstLayer
+	text = No buttons have been pressed yet
+	elemType = CustomUIElement
+
+	<button>
+		id = testButton
+		text = PRESS ME
+		action = incrementGlobalCounter
+		y = 20up
+		width = 80up
+	</button>
+
+	<iconButton>
+		id = testIconButton
+		action = changeButtonText
+		y = 45up
+		width = 80up
+		<elem>
+			id = defIcon
+			image = customIcon
+			width = 16up
+			text = Icon Button
+			textOffsetX = 10up
+			textHorAlign = Left
+			x = 10up
+		</elem>
+	</iconButton>
+
+</window>
